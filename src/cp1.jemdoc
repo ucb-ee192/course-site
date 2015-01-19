@@ -1,0 +1,91 @@
+﻿# jemdoc: menu{MENU}{cp1.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 1
+
+=== Introduction
+This lab is designed to introduce you to the Freescale Kinetis L Freedom development board (KL25Z).
+
+Useful documentation and pinout information can be found here:
+- [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=FRDM-KL25Z Freescale KL25Z]
+- [http://mbed.org/handbook/mbed-FRDM-KL25Z KL25Z mbed Libraries].
+
+=== Checkoff Requirements
+- Print "Hello World" to a serial terminal
+- Solder and blink and LED using a timer
+
+=== Version Control with Git
+It's good to get into the habit of working with version control. This will pay dividends in the near future. Version control will let you easily save (and if necessary, roll back to) a version of code that works. It also enables multiple team members to work on code and merge changes.
+
+To get a private repository for your group, please send the TA an email with your GitHub usernames.
+
+The starter code can be found on [https://github.com/ucb-ee192/skeleton GitHub].
+
+=== Keil uVision and Serial Communication
+Let's write the classic "Hello World" program. The code to do this is straightforward and is provided in the starter code. This section will focus on Keil uVision and serial communication.
+
+Download the starter code linked above and open ee192-sp14.uvproj in uVision.
+
+*Buildling:* Go to Project > Build Target (or press F7).
+
+*Downloading Option 1:* Attach the KL25Z to your computer via USB (shown below). It should show up as an external storage device. Copy\/paste the file (repository root)\/build\/ee192-sp14_KL25Z.bin into that external storage device. Finally, press the reset button on the KL25Z.
+
+~~~
+{}{img_left}{images/cp1/FRDM-KL25Z-usb.jpg}{300}{400}{}
+Use this USB port.
+~~~
+
+*Downloading Option 2:* Attach the KL25Z to your computer via USB (shown above).
+~~~
+{}{img_left}{images/cp1/usbdownload-1.PNG}{}
+Make note of the drive letter (in this case "F").
+~~~
+
+~~~
+{}{img_left}{images/cp1/usbdownload-2.PNG}{}
+Click on "Target Options.""
+~~~
+
+~~~
+{}{img_left}{images/cp1/usbdownload-3.PNG}{}
+Ensure that the proper drive letter is specified.
+~~~
+
+~~~
+{}{img_left}{images/cp1/uvision_download.png}{Z}
+Press the yellow and blue "LOAD" button.
+~~~
+
+*Serial communication using PuTTY:* Select Connection type: Serial and ensure the correct COM port is selected. To check the COM port, open the Windows Device Manager (protip: Win\+R, run +devmgmt.msc+), expand "Ports," and look for "mbed Serial Port."
+
+Once you're connected, press the reset button on the KL25Z, and you should see it print "Hello World!"
+~~~
+{}{img_left}{images/cp1/putty_serial.jpg}{Serial on PuTTY}
+~~~
+
+=== LED Blink
+The next task is to make an LED blink at 1Hz, 75\% duty cycle. This means that the LED is on 75\% of the time and off 25\% of the time.
+
+~~~
+{}{img_left}{images/cp1/led_circuit.png}{LED Circuit}
+
+Do not use the built-in LED for this exercise.
+
+You will need to build a circuit consisting of an LED and resistor.
+
+Be sure to choose the value of the current-limiting resistor so that the LED receives about 1.6mA of current. The supply voltage is 3.3V.
+~~~
+
+~~~
+{}{img_left}{images/cp1/kl25z-pinout-revised.jpg}{KL25Z Pinout}
+After you have finished your circuit, connect it to one of the pins on the KL25Z as well as one of the ground pins. In general, most pins can be configured to be used as a digital input or output. Update your code to reflect the pin you have chosen (such as PTA13 or PTE20).
+
+Remember that the LED is a diode and only works in one direction. Make sure the "flat side" of the LED is connected to ground.
+~~~
+
+=== Extra: Fading LED using PWM
+Due to properties of LEDs, they are normally either on or off. However, we can get them to fade using PWM, or Pulse Width Modulation. PWM allows for a digital approximation of an analog value by turning on and off the output very fast.
+
+It's a good idea to get familiarized with PWM, as you will be using it for controlling your servo and motors later on.
+
+Learn about the mbed PwmOut interface [http://mbed.org/handbook/PwmOut here].

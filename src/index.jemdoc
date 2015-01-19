@@ -1,0 +1,80 @@
+# jemdoc: menu{MENU}{index.html}
+= EE192: Mechatronics Design Lab, Spring 2015
+
+== Course
+*Syllabus:* [files/syllabus.pdf (pdf)]\n
+  (grade breakdown structure is in the document)
+
+*Lecture:*\n
+  Tue 9:30am - 11:00pm, 299 Cory\n
+  There are no lectures on Thursdays.\n
+
+*Discussion \/ lab lectures:*\n
+  Wed 9:00am - 10:00am (open to change!), 204 Cory (lab)\n
+  Thu 11:00am - noon (open to change!), 204 Cory (lab)\n
+
+*Checkoffs:*\n
+  Fri (time TBD), 204 Cory (lab)\n
+
+/The scheduling information here supersedes the information on the [http://osoc.berkeley.edu/OSOC/osoc?p_term=SP&p_course=192&p_dept=ee official schedule]./
+
+
+== Staff
+*Professor:* Ron Fearing\n
+/Email:/ ronf AT eecs\n
+/Office Hours:/\n
+  Mon 1:30 - 2:30pm, 725 Sutardja Dai\n
+  Thu 2:10 - 3:00pm, 725 Sutardja Dai\n
+
+*Teaching Assistant:* Richard "Ducky" Lin\n
+/Email:/ richard.lin AT berkeley - responses only guaranteed within 24 hours (48 on weekends)\n
+/Office Hours:/\n
+  TBD, 204 Cory (lab)\n
+
+/[https://piazza.com/berkeley/spring2015/eecs192/home Piazza] is a batter way to get your questions answered than email!/
+
+
+== Announcements
+- *\[18 Jan\]* First day of lecture is Tuesday, 20 Jan. Discussion sections will be held Wednesday, 21 Jan and Thursday, 22 Jan at the scheduled times. A poll will determine if these times should change for future sections.
+
+
+== Course Outline
+The Mechatronics Design Lab is a design project course focusing on application of theoretical principles in electrical engineering and computer science to control of mechatronic systems incorporating sensors, actuators, and intelligence. This course gives you a chance to use your knowledge of (or learn about) power electronics, filtering and signal processing, control, electromechanics, microcontrollers, and real-time embedded software in designing a racing robot.
+
+The class project is to design a racing robot which can follow a curving and self-crossing racetrack at speeds greater than 3 meters per second using an optical sensor. Each team starts with a standard 1/10th-scale RC car platform and a pre-built CPU board, determines an optimal strategy, and designs sensors, electronics, and control algorithms. Vehicles individually follow a 100 meter course, staying on track and avoiding obstacles.
+
+The course project requires students to consider real-world constraints such as limited volume, payload, electrical power, processing power, and time. Oral and written reports will be required justifying design choices. Grading will be based upon design checkpoints, the reports and a final exam. A portion of the grade will be determined by vehicle performance and robustness.
+
+
+== Prerequisites
+CS61C, EE40, EECS120 or equivalent (2 out of 3 is okay if teamed up with other students who have those classes).
+
+
+== Course Materials
+There is no required text for this course. Students may benefit from the following recommended texts, which are on reserve in the Engineering Library.
+
+- D.M. Auslander. Mechatronics: Mechanical System Interfacing
+- R.D. Klafter. Robotic Engineering: An Integrated Approach
+- Horowitz and Hill. The Art of Electronics
+
+
+== Note
+How to Build a Robot in 5 Easy Steps
+
+Building a basically functioning racing car robot in EECS192 typically takes 5 weeks of the course. Students use the remainder of the course to improve sensors, system integration, and algorithms. Debugging the whole system of course takes time, and the more complicated the system is, the longer the debugging takes. Students work in teams of 2 or 3 students, to divide the work. Experience shows that simple designs take less time to build, and work better!
+
+The design process is broken down into manageable steps through design checkpoints. Each design step is preceded by a lecture covering the main ideas and principles. Here is an outline of the design checkpoints for the first weeks:
+
+- *Week 1*: Become familiar with given CPU board. Soldering technique is taught. Use C compiler to write the hello world program and make an LED blink.
+- *Week 2*: Construct circuit to turn drive motor on and off from logic levels. The circuit design and operation are explained in lecture. Assemble car chassis.
+- *Week 3*: Demonstrate on-off and forward-reverse of drive motor under computer control using the computer and motor circuit from previous *weeks.* This requires only a few lines of C code, as the needed computer IO hardware is already provided on the CPU board. Demonstrate left-right control of steering motor.
+- *Week 4*: Mount CPU board and motor drive board on car chassis, and connect power and control wires. Ensure that the robot car can drive and steer from the battery.
+- *Week 5*: Demonstrate that the vehicle power, computer, steering and drive are functional by having the robot car drive a simple figure 8: circling left followed by circling right.
+
+Thus after 5 weeks, the vehicle hardware is mostly done. The remaining hardware to add is a line sensor so the robot can stay on the race track. Algorithm and control strategy development take up the next 9 weeks. Again, there are well-defined design check points to ensure timely progress and keep the project scope bounded.
+
+Each robot race car will be individually timed as it follows a line or buried wire laid out on a 100 meter path in a large arena. The path is not known until the time of the race, and has many curves and self-crossings. Every team is using the same motor and batteries, so competitive advantage comes from using smarter algorithms that are better at keeping the car on the race track. A time penalty is used for vehicles that stray too far from the line and knock over traffic cones, so simply using maximum acceleration will not be a good strategy.
+
+
+== Other
+Interested in how the site and course materials were built? We're open-source on GitHub [https://github.com/ucb-ee192/course-site here]!

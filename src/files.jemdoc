@@ -1,0 +1,98 @@
+# jemdoc: menu{MENU}{files.html}
+= EE192: Mechatronics Design Lab, Spring 2015
+
+== Course Files
+*Under revision for Spring 2015! Check back soon!*
+
+=== Design notes
+
+*General*
+- [/~ee192/sp11/design/designnotes.htm General design notes]
+- [/~ee192/sp13/pdf/ee192_oralpresentation2004.pdf Oral presentation from 2004 winners]
+- [/~ee192/sp13/pdf/PostCompetitionThoughts2004.ppt Post-comp thoughts from 2004 winners]
+
+*Boost Converter*
+- [/~ee192/sp14/files/boost-converter.pdf Boost Converter Notes (PDF)]
+
+*Bluetooth*
+- [/~ee192/sp13/pdf/abe_setup_bluesmirf.pdf BlueSMIRF setup guide]
+
+*PCB layout*
+- [http://www.sparkfun.com/tutorials/108 SparkFun EAGLE guide]
+- [/~ee192/sp13/pdf/ExpressPCBDesignTips.pdf PCB design tips]
+- [http://www.ti.com/lit/an/snva021b/snva021b.pdf Application notes for switching power supplies]
+
+*Soldering*
+- [http://store.curiousinventor.com/guides/How_To_Solder/ CuriousInventor's guide to soldering]
+
+*Control*
+- [/~ee192/sp13/pdf/control-overview2.pdf Control overview]
+- [/~ee192/sp13/pdf/steer-control.pdf Bicycle model steering analysis]
+
+=== Datasheets
+*FRDM microcontroller board*
+- [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=FRDM-KL25Z FRDM-KL25Z product page]
+- [/~ee192/sp13/pdf/frdmfiles.zip FRDM-KL25Z files]
+- [http://mcuoneclipse.com/ Website with excellent tutorials]
+
+*mbed library*
+- [http://mbed.org/handbook/mbed-FRDM-KL25Z-Getting-Started KL25Z Getting Started]
+- [http://mbed.org/cookbook/Homepage mbed Cookbook]
+
+*Motor drive*
+- [http://www.irf.com/product-info/datasheets/data/irfb3006pbf.pdf IRFB3006 N-channel power MOSFET]
+- [http://www.fairchildsemi.com/ds/ND/NDP7060.pdf NDP7060 N-channel power MOSFET]
+- [http://pdfserv.maxim-ic.com/arpdf/MAX620-MAX621.pdf MAX620/621 MOSFET driver]
+
+*Motor modeling*
+- [/~ee192/sp13/pdf/motor_modeling.pdf Motor modeling notes]
+
+*Switching regulators*
+- [/~ee192/sp13/pdf/LT1370.pdf LT1370]
+
+*Linear regulators*
+- [http://www.national.com/ds/LM/LM2940.pdf LM2940]
+- [http://www.national.com/ds/LM/LM1086.pdf LM1086]
+- [http://www.fairchildsemi.com/ds/KA/KA378R05.pdf KA378R05]
+
+*Op amps*
+- [http://www.national.com/ds/LM/LM6142.pdf LM6144]
+- [http://www.national.com/ds/LM/LM6152.pdf LM6154]
+- [http://www.national.com/ds/LM/LMH6642.pdf LM6644]
+
+*Sensing*
+- [https://community.freescale.com/docs/DOC-1030 Freescale Line Scan Camera]
+- [/~ee192/sp14/files/TSL1401CL.pdf Freescale Line Scan Camera Datasheet]
+- [/~ee192/sp13/pdf/s6986.pdf Hamamatsu S6986 optical detector]
+
+=== Where and how to find parts
+- [http://www.ladyada.net/wiki/partfinder LadyAda Partfinder]
+
+*Distributors*
+- [http://www.digikey.com/ DigiKey]
+-- Digikey typically stocks most electronics parts.
+- [http://www.mouser.com/ Mouser]
+-- Mouser, like Digi-Key, typically stocks most electronics parts.
+- [http://www.mcmaster.com/ McMaster-Carr]
+-- McMaster-Carr is useful for buying mechanical components, such as fasteners (bolts, screws, nuts, etc) as well as raw material for constructing the car (multiple types of bar, stock, etc)
+
+*Semiconductor manufacturers*
+- [http://www.ti.com/ Texas Instruments]
+- [http://www.fairchildsemi.com/ Fairchild]
+- [http://www.maxim-ic.com/ Maxim IC]
+- [http://www.linear.com/ Linear]
+- [http://www.analog.com/ Analog Devices]
+
+If you need a speciality part, often times you can put in a request for free samples from the manufacturer directly.
+
+=== Library and common files
+- [files/ee192.lbr EE192 parts EAGLE library \#1]
+- [files/natcar.lbr EE192 parts EAGLE library \#2]
+- [files/freescale_chassis_cad_sw.zip Chassis 3D model (SolidWorks)]
+- [files/freescale_chassis_cad_step.zip Chassis 3D model (.STEP)]
+- [files/chassis-sketch-top-view.pdf Chassis top view sketch (PDF)]
+- [files/chassis-sketch-side-view.pdf Chassis side view sketch (PDF)]
+
+
+=== Misc.
+- [http://supernode.berkeley.edu/media/safety.m4v Lab safety video (.m4v)]

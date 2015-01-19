@@ -1,0 +1,188 @@
+# jemdoc: menu{MENU}{schedule.html}
+= EE192: Mechatronics Design Lab, Spring 2015
+
+== Lab Schedule
+~~~
+{}{table}
+*Week* | *Lecture and Quizzes* | *Discussion* | *Checkoff* | *Misc. Deadlines* ||
+1 \n {{<small>}}20 Jan{{</small>}} | 
+Intro to mechatronics\n
+Project description\n
+{{<small>}}MCU platform overview{{</small>}}\n
+Administrivia\n |
+Administrivia\n
+FRDM board\n
+Soldering |
+*C0*: Team formation\n
+\n
+Do NOT disassemble cars! | 
+ ||
+ 
+2 \n {{<small>}}26 Jan{{</small>}} | 
+Project proposal\n
+Motor control & modelling\n
+Microcontroller recap\n
+{{<small>}}IOs and peripherals{{</small>}}\n
+Electronic construction |
+Project proposal\n
+Lab equipment\n
+Car critiques |
+*C1*: Hello world, blinking LED\n
+\n
+Do NOT disassemble cars! |
+ ||
+
+3 \n {{<small>}}3 Feb{{</small>}} | 
+Motor drivers\n
+{{<small>}}MOSFETs{{</small>}}\n
+{{<small>}}H-bridge circuit{{</small>}}\n
+{{<small>}}PWM{{</small>}}\n
+\n
+Quiz 1\n
+{{<small>}}Motor model{{</small>}} |
+Motor control demo\n
+Servo control demo\n
+Telemetry framework | 
+*C2*: Car inspection\n
+{{<small>}}and disassembly{{</small>}}\n | 
+Fri: Project proposal ||
+
+4 \n {{<small>}}9 Feb{{</small>}} | 
+Servos\n
+Power systems\n
+{{<small>}}Battery model{{</small>}}\n
+{{<small>}}Boost converter{{</small>}}\n
+{{<small>}}SMPS practicalities{{</small>}}\n
+\n
+Quiz 2\n
+{{<small>}}Motor drivers and MOSFETs{{</small>}} |
+Mechanical prototyping\n
+SMPS demo |
+*C3*: Benchtop motor & steering |
+ ||
+
+5 \n {{<small>}}16 Feb{{</small>}} | 
+Power Systems\n
+{{<small>}}Linear regulators{{</small>}}\n
+{{<small>}}Comparison{{</small>}} | 
+PCB peer review\n
+PCB fabrication |
+*C4*: Motor from battery |
+Lab: PCB \#1\n
+{{<small>}}draft for peer review{{</small>}}\n
+Fri : PCB \#1\n
+{{<small>}}fabrication-ready{{</small>}}||
+
+6 \n {{<small>}}23 Feb{{</small>}} | 
+Sensors\n
+{{<small>}}Optical encoder{{</small>}}\n
+{{<small>}}Velocity sensing{{</small>}}\n
+\n
+Quiz 3\n
+{{<small>}}SMPS, linear regulators{{</small>}} |
+Optical encoder\n
+Velocity control |
+*C5*: Velocity control | 
+ ||
+
+7 \n {{<small>}}2 Mar{{</small>}} | 
+Line Sense Intro\n
+{{<small>}}Line camera{{</small>}}\n
+{{<small>}}Interfacing{{</small>}} |
+Line camera demo |
+*C6*: Car assembled\n
+{{<small>}}running from PCBs{{</small>}}\n
+{{<small>}}open-loop drop and run{{</small>}} |
+Fri: Lab cleaned ||
+
+8 \n {{<small>}}9 Mar{{</small>}} | 
+Theoretical models\n
+{{<small>}}PID control{{</small>}}\n
+{{<small>}}Bicycle model{{</small>}} |
+PID demo | 
+*C7*: Benchtop tracking |
+ ||
+
+9 \n {{<small>}}16 Mar{{</small>}} |
+Steering\n
+{{<small>}}Model recap{{</small>}}\n
+{{<small>}}Step response{{</small>}}\n
+Tracking control\n
+\n
+Quiz 4\n
+{{<small>}}Steering models, PID control{{</small>}}\n |
+Simulation |
+*C8*: Figure-8 test\n
+{{<small>}}closed-loop drop and run{{</small>}} |
+ ||
+
+10 \n {{<small>}}23 Mar{{</small>}} | 
+Spring Break |
+{{<small>}}N/A{{</small>}} | 
+Enjoy your break\n
+{{<small>}}even if all you're doing is\n
+preparing for the Freescale cup{{</small>}} | 
+ ||
+
+11 \n {{<small>}}30 Mar{{</small>}} | 
+Control practicalities\n
+{{<small>}}Sampling\/discretization{{</small>}}\n
+{{<small>}}Noise and filtering{{</small>}}\n |
+TBD | 
+*C9*: Faster figure-8\n
+{{<small>}}and sensor mechanical response{{</small>}} |
+Fri: Lab cleaned ||
+
+12 \n {{<small>}}6 Apr{{</small>}} | 
+Feedforward control |
+TBD |
+*C10*: Practice course |
+ ||
+
+13 \n {{<small>}}13 Apr{{</small>}} |
+Robustness and uncertainty\n
+{{<small>}}Latchup{{</small>}}\n
+{{<small>}}Mechanical design{{</small>}}\n
+{{<small>}}Software robustness{{</small>}}\n
+{{<small>}}Supervisor systems{{</small>}}\n
+\n
+Quiz 5\n
+{{<small>}}Steering behavior and error{{</small>}}\n |
+TBD |
+*Race 1*! |
+Sat: Freescale Cup\n
+{{<small>}}(at UC Davis){{</small>}} ||
+
+14 \n {{<small>}}20 Apr{{</small>}} |
+Mechatronics examples\n
+{{<small>}}Electronic stability control{{</small>}} |
+TBD |
+ |
+ ||
+
+15 \n {{<small>}}27 Apr{{</small>}} | 
+Mechatronics examples |
+TBD |
+*Race 2*! |
+Fri: Lab cleaned ||
+
+16 \n {{<small>}}4 May{{</small>}} |
+Oral reports |
+{{<small>}}N/A{{</small>}} |
+ |
+ ||
+
+17 \n {{<small>}}11 May{{</small>}} | 
+Wed: Final Exam\n
+{{<small>}}(11:30am-2:30pm){{</small>}} |
+{{<small>}}N/A{{</small>}} |
+ |
+ ||
+
+{{<small>}}23 Feb{{</small>}} | 
+ |
+ |
+ |
+Sat: NATCAR Race\n
+{{<small>}}(at UC Davis){{</small>}}
+~~~
