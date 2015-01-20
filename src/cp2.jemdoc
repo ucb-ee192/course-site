@@ -1,0 +1,15 @@
+# jemdoc: menu{MENU}{cp2.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 2
+This week’s lab checkpoint is simple, so you can devote more effort to the project proposal.
+
+=== If you have a used car
+Strip the car down to its chassis
+- Save any useful components (including but not limited to: heatsinks, ICs, switches, wood, and plastic)
+- Remove and return all electronic assmeblies (circuit boards, sensors, and the like). These will be kept in the lab as a reference for all teams.
+
+=== If you have a new car
+Build the car chassis
+- Ensure no parts are missing
+- [files/TheFreescaleCupCarModelAssemblyManual.pdf Instructions (PDF)]

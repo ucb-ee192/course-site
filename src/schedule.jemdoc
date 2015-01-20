@@ -13,7 +13,7 @@ Administrivia\n |
 Administrivia\n
 FRDM board\n
 Soldering |
-*C0*: Team formation\n
+[cp0.html *C0*: Team formation]\n
 \n
 Do NOT disassemble cars! | 
  ||
@@ -27,7 +27,7 @@ Electronic construction |
 Project proposal\n
 Lab equipment\n
 Car critiques |
-*C1*: Hello world, blinking LED\n
+[cp1.html *C1*: Hello world, blinking LED]\n
 \n
 Do NOT disassemble cars! |
  ||
@@ -43,7 +43,7 @@ Quiz 1\n
 Motor control demo\n
 Servo control demo\n
 Telemetry framework | 
-*C2*: Car inspection\n
+[cp2.html *C2*: Car inspection]\n
 {{<small>}}and disassembly{{</small>}}\n | 
 Fri: Project proposal ||
 
