@@ -1,3 +1,2 @@
-# course-site
-Course site source for UC Berkeley's EE192 (Mechatronics).
-Live version is here: http://www-inst.eecs.berkeley.edu/~ee192/sp15/
+# EE192 Course Site
+To build, run 'python build/scons.py'. This creates a new directory, site (ignored by .gitignore) which contains the entire website.
