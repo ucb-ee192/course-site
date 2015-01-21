@@ -17,9 +17,19 @@ Useful documentation and pinout information can be found here:
 === Version Control with Git
 It's good to get into the habit of working with version control. This will pay dividends in the near future. Version control will let you easily save (and if necessary, roll back to) a version of code that works. It also enables multiple team members to work on code and merge changes.
 
-To get a private repository for your group, please send the TA an email with your GitHub usernames.
+Private course GitHub repositories will be handed out during checkpoint 0. If your team has not received your private repository yet, please email the TA (remembering to include to GitHub usernames of all team members).
 
 The starter code can be found on [https://github.com/ucb-ee192/skeleton GitHub].
+
+You can also download the GitHub GUI client [https://windows.github.com/ here]. This should not require administrator permissions to run on the lab machines.
+
+=== Optional: Installing Keil Locally
+If you want to use a laptop (instead of the lab machines) for development, [http://users.encs.concordia.ca/~mo_askar/Keil.pdf this document] (specifically sections 1-4) provides an overview of how to get things set up.
+
+=== Installing the DFP (Device Family Pack)
+The Device Family Pack provides programming support in uVision for a set of devices. Go to the [http://www.keil.com/dd2/arm/armcm0/ ARMCM0 DFP page] and download the Device Family Pack, then run it. By default, it should install itself into the uVision IDE. This should not require administrator permissions to install on the mab machines.
+
+You may have to do this if you are using a fresh lab machine. The uVision IDE should complain if you don't have the DFP and try to load the code.
 
 === Keil uVision and Serial Communication
 Let's write the classic "Hello World" program. The code to do this is straightforward and is provided in the starter code. This section will focus on Keil uVision and serial communication.

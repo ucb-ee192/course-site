@@ -9,10 +9,14 @@
 Intro to mechatronics\n
 Project description\n
 {{<small>}}MCU platform overview{{</small>}}\n
-Administrivia\n |
+Administrivia\n
+\n
+{{<small>}}[files/lec1-v1.pdf (slides)]{{</small>}} |
 Administrivia\n
 FRDM board\n
-Soldering |
+Soldering\n
+\n
+{{<small>}}[slides/dis1-intro.pdf (slides)]{{</small>}} |
 [cp0.html *C0*: Team formation]\n
 \n
 Do NOT disassemble cars! | 
