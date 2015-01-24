@@ -36,6 +36,7 @@
 \section{Administrivia} % [5 mins]
 %---------------------------------------------------------------------
 \subsection{Getting Started...}
+
 \begin{frame}
 \frametitle{Welcome}
 \begin{center}
@@ -111,13 +112,6 @@ Get your cars!
       \item Most operations local, periodically sync
     \end{itemize}
   \end{itemize}
-  \item Basic workflow
-  \begin{itemize}
-    \item Pull new changes from server (\texttt{git pull})
-    \item Make changes in working directory
-    \item Commit to local repo (\texttt{git commit})
-    \item Push changes to server (\texttt{git push})
-  \end{itemize}
   \item Best Practices
   \begin{itemize}
     \item Small, logical, often commits
@@ -131,29 +125,12 @@ Get your cars!
 \centering
 \includegraphics[width=1.0\columnwidth]{images-dis1/Git-Logo-2Color}
 \newline
-{\tiny git logo, by Jason Long, CC BY 3.0}
+{\tiny git logo, by Jason Long, CC BY 3.0}\\
+\vspace{20px}
+Learn git here: \\
+\url{try.github.io}
+
 \end{figure}
-\end{columns}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Scheduling}
-\begin{columns}[t]
-\column{0.646\textwidth}
-\begin{itemize}
-  \item Best time for GSI office hours? (about 2 per week)
-  \begin{itemize}
-    \item Thursday, for the pre-checkoff scramble?
-    \item Other times?
-  \end{itemize}
-  \item Thursday section only: has schedules cleared up enough to move discussion to Wednesday?
-  \begin{itemize}
-    \item Otherwise, future discussion sections (starting Thu, 29 Jan) will be 9:30am-10:30am
-  \end{itemize}
-\end{itemize}
-
-\column{0.323\textwidth}
 \end{columns}
 \end{frame}
 
@@ -330,11 +307,11 @@ void led_blink_periodic(
 \frametitle{Hello, World! Demo}
 \begin{center}
 {\huge Live Demo!} \\
-\vspace{5mm}
+\vspace{20px}
 \tiny{This is essentially the procedure demonstrated in the checkpoint 1 page} \\
-\vspace{5mm}
+\vspace{20px}
 \tiny{... and hopefully goes Murphy-free ...} \\
-\vspace{10mm}
+\vspace{40px}
 {\tiny Note: you'll have to download the Device Family Pack for the FRDM-KL25Z \\
 \url{http://www.keil.com/dd2/arm/armcm0/} \\
 (also on the checkpoint page)} \\
@@ -370,7 +347,7 @@ Example solder joints: \\
 \vspace{20px}
 \includegraphics[width=1.0\columnwidth]{images-dis1/pcb-pth} \\
 Through-hole \\
-% TODO: make diagram margins consistent
+\vspace{20px}
 \includegraphics[width=1.0\columnwidth]{images-dis1/pcb-smt} \\
 Surface-mount
 \end{figure}
@@ -465,7 +442,7 @@ showing flux core
 \begin{columns}[t]
 \column{0.646\textwidth}
 \begin{itemize}
-  \item The tip is what heat things up
+  \item The tip is what heats things up
   \begin{itemize}
     \item Want to maximize thermal transfer!
   \end{itemize}
@@ -518,6 +495,7 @@ showing flux core
 Optimal joint shape is a ``solder volcano''
 \begin{figure}
 \centering
+% TODO: split into several graphics
 \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{images-dis1/solder-joints}
 \end{figure}
 \end{frame}
@@ -528,19 +506,79 @@ Optimal joint shape is a ``solder volcano''
 \frametitle{Through-Hole Soldering Demo}
 \begin{center}
 {\huge Live Demo!} \\
-\vspace{5mm}
+\vspace{20px}
 {\tiny... which REALLY hopefully goes Murphy-free ...}
 \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Scheduling}
+\begin{columns}[t]
+\column{0.646\textwidth}
+\begin{itemize}
+  \item Quick poll: best time for GSI office hours? \\
+  (about 2 per week)
+  \begin{itemize}
+    \item Thursday, for the pre-checkoff scramble?
+    \item Other times?
+  \end{itemize}
+  \item Thursday section only: has schedules cleared up enough to move discussion to Wednesday?
+  \begin{itemize}
+    \item Otherwise, future discussion sections (starting Thu, 29 Jan) will be 9:30am-10:30am
+  \end{itemize}
+\end{itemize}
+
+\column{0.323\textwidth}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Electrostatic Discharge}
+\begin{columns}[t]
+\column{0.646\textwidth}
+\begin{itemize}
+  \item You build up static charge on your body
+  \begin{itemize}
+    \item ... just by walking, especially when it's dry
+    \item ... and up to several kV
+    \item but under $\sim$2kV is imperceptible
+  \end{itemize}
+  \item Chips are sensitive to high voltages: \\
+  \textbf{may cause permanent damage}
+  \begin{itemize}
+    \item read: board stops working ``for no reason''
+  \end{itemize}
+  \item Remember to ground (discharge) yourself before handling sensitive electronics
+  \begin{itemize}
+    \item Touch the grounded lab bench surface
+    \item Use a ESD wriststrap
+    \item Avoid touching traces on boards
+  \end{itemize}
+\end{itemize}
+
+\column{0.323\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{images-dis1/fried-boards}
+\newline
+Don't let this happen \\
+to you
+\end{figure}
+\end{columns}
 \end{frame}
 
 \begin{frame}
 \frametitle{Fin}
 \begin{center}
 Get your parts and get started! \\
+\vspace{5px}
+{\tiny I'll be walking around helping!} \\
 \vspace{20px}
 For checkpoint 1, you need to solder a resistor and LED onto perfboard \\
-Choose the resistor such that ~1.6mA goes through the LED \\
+Choose the resistor such that $\sim$1.6mA goes through the LED \\
 The MCU supply voltage is 3.3v \\
+\vspace{5px}
+{\tiny (yes, I know those red LEDs suck)} \\
 \vspace{20px}
 Also, grab a computer account form!
 \end{center}
