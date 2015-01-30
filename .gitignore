@@ -12,3 +12,13 @@ slides/*.snm
 slides/*.gz
 slides/*.toc
 slides/*.vrb
+
+docs/*.aux
+docs/*.log
+docs/*.nav
+docs/*.out
+docs/*.pdf
+docs/*.snm
+docs/*.gz
+docs/*.toc
+docs/*.vrb

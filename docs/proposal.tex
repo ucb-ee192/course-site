@@ -1,0 +1,115 @@
+\documentclass[10pt]{article}
+\usepackage{latexsym}
+\usepackage{fullpage}
+%\pagestyle{fancyplain}
+\setlength{\textheight}{10.0in}
+\begin{document}
+\thispagestyle{empty}
+Professor Fearing ~~~~~~~~~~ EECS192/Project Proposal ~~~~~~~~~~~~~ Spring 2015\\
+{\bf Due by 5 pm Fri. Feb. 6 under door of 725 S.D. Hall.} \\
+
+
+The purpose of the project proposal is to give you early feedback on
+your design ideas, to help to steer you away from some of the common
+design flaws. A good motto to keep in mind is
+``measure twice, drill once''. The pace of the rest of the course is
+quite fast, and now is the time to plan what equipment you want, and
+where it should be mounted. 
+The project proposal is a non-trivial amount of work; we
+would like to see 10 hours of effort per team member. Please
+read the NatCar rules from the UC Davis site.
+Here is an outline for you to follow:\\
+
+{\bf 1. Overall Strategy (1 page) (20\%)}
+
+1.1
+Think about ``winning''
+strategies. A ``winning'' strategy is one which results in
+a functional, thoroughly tested, and reliable vehicle with a minimum
+of effort. Separately list essential and 
+``wouldn't it be great to have'' features. A good rule of thumb
+is that you would like to be 80\% complete with 20\% of budget.\\
+
+1.2
+Now speed is of course an important consideration,
+but speed without stability and robustness won't get you far.
+Will your vehicle rely on raw speed, expert navigation,
+expert braking, etc?  How does your strategy affect the types of sensors and
+control strategies you will use?  \\
+
+1.3
+List anticipated sensor needs and
+how they will be used. ({\bf Estimate number of lines of digital and analog
+IO you will use.})\\
+
+{\bf 2. Hardware Design }
+
+{\bf 2.1 Attachments to Vehicle (one page) (5\%)}
+
+List every attachment you anticipate adding to your vehicle. (You are
+not committing to adding these devices, just leaving room for them if
+desired). Some possible things to attach: CPU board, IO board, 
+battery pack, DC-DC converter, user interface, sensors,
+etc.
+
+{\bf 2.2 Detailed Mechanical Drawings of Vehicle (2 pages) (20\%)}\\
+Draw a detailed layout of the
+vehicle with attachments from section 2.1. Include dimensions of
+circuit boards and vehicle. Expected detail is to level of screw
+holes for what you need to mount. 
+Show location of flag mounting post, emergency stop switch,
+and battery pack.
+Do some rough sketches first: can you change the battery pack
+without unscrewing anything? 
+Are
+switches for mode/power/reset readily accessible? Have you left room
+for expansion circuitry components if needed?
+(You can use ppt to sketch locations on top of provided drawings.)
+
+Include a labelled photo which indicates good locations for mounting
+an encoder wheel for speed sensing.
+
+
+{\bf 2.3 List of Special Materials (0.5 page) (5\%)}
+
+Do you need metal or plastic
+brackets? Metal or plastic plates?  Special switches or connectors? If
+there is enough interest, we can arrange car pools to TAP plastics or
+Fry's. We also will put together periodic class mail orders to Digikey.
+
+{\bf 2.4 Motor Drive Circuitry (1 page) (30\%)}
+
+Show a detailed schematic for your motor drive circuitry, including values and
+pin \#s.
+Draw expected parts layout. Is there room for heatsinks?
+(See hand out for example of a detailed schematic/parts layout.)\\
+
+{\bf 3. Software Strategy (Confidential) (1 page) (20\%)}
+
+
+3.1 Describe in some detail what you expect a good software strategy to be.
+How much effort will be extended on for example, precise steering,
+precise speed distance/velocity, error recovery? List those things you need
+to understand more completely before you will be able to design
+your software. 
+
+3.2 State your assumptions about what quality of sensors
+you are assuming. Consider geometry and field of view for line sensor(s).
+
+3.3 Make a first pass, high-level block diagram of
+the software system. (A block diagram should be like Fig. 5
+in Thrun et al.~\cite{Thrun06} showing
+functional modules and their interconnection, {\bf not a flow chart}.) 
+
+\begin{small}
+\bibliographystyle{IEEEtranS}
+\begin{thebibliography}{10}
+{
+\bibitem{Thrun06} 
+S. Thrun et al.,
+``Stanley: The robot that won the DARPA Grand Challenge.''
+{\em Journal of Field Robotics,} 23(9), 661-692, 2006.
+}
+\end{thebibliography}
+\end{small} 
+\end{document}

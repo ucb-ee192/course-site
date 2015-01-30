@@ -11,7 +11,9 @@ Project description\n
 {{<small>}}MCU platform overview{{</small>}}\n
 Administrivia\n
 \n
-{{<small>}}[files/lec1-v1.pdf (slides)]{{</small>}} |
+{{<small>}}[files/lec1-v1.pdf (slides)]{{</small>}} 
+{{<small>}}[http://robots.stanford.edu/papers/thrun.stanley05.pdf (Thrun JFR 2006)]{{</small>}} 
+|
 Administrivia\n
 FRDM board\n
 Soldering\n
@@ -24,13 +26,16 @@ Do NOT disassemble cars! |
  
 2 \n {{<small>}}26 Jan{{</small>}} | 
 Project proposal\n
-Motor control & modelling\n
+Motor control & 
+[http://higheredbcs.wiley.com/legacy/college/nise/0470646128/appendices/appendixI.pdf modelling]\n
 Microcontroller recap\n
 {{<small>}}IOs and peripherals{{</small>}}\n
 Electronic construction |
 Project proposal\n
 Lab equipment\n
-Car critiques |
+Car critiques\n
+\n
+{{<small>}}[slides/dis2-equipment-cars.pdf (slides)]{{</small>}} |
 [cp1.html *C1*: Hello world, blinking LED]\n
 \n
 Do NOT disassemble cars! |
@@ -45,11 +50,10 @@ Motor drivers\n
 Quiz 1\n
 {{<small>}}Motor model{{</small>}} |
 Motor control demo\n
-Servo control demo\n
-Telemetry framework | 
+Servo control demo | 
 [cp2.html *C2*: Car inspection]\n
 {{<small>}}and disassembly{{</small>}}\n | 
-Fri: Project proposal ||
+Fri 2/6: [docs/proposal.pdf Project proposal] ||
 
 4 \n {{<small>}}9 Feb{{</small>}} | 
 Servos\n
@@ -85,7 +89,8 @@ Sensors\n
 Quiz 3\n
 {{<small>}}SMPS, linear regulators{{</small>}} |
 Optical encoder\n
-Velocity control |
+Velocity control\n
+Telemetry framework |
 *C5*: Velocity control | 
  ||
 
