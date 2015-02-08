@@ -7,9 +7,16 @@ This week’s lab checkpoint is simple, so you can devote more effort to the pro
 === If you have a used car
 Strip the car down to its chassis
 - Save any useful components (including but not limited to: heatsinks, ICs, switches, wood, and plastic)
-- Remove and return all electronic assmeblies (circuit boards, sensors, and the like). These will be kept in the lab as a reference for all teams.
+- Remove and return all electronic assemblies (circuit boards, sensors, and the like). These will be kept in the lab as a reference for all teams.
 
 === If you have a new car
 Build the car chassis
 - Ensure no parts are missing
-- [files/TheFreescaleCupCarModelAssemblyManual.pdf Instructions (PDF)]
+- [/~ee192/sp14/files/TheFreescaleCupCarModelAssemblyManual.pdf Instructions (PDF)]
+
+== Checkoff Procedure
+Teams must either:
+- Have a stock assembled car chassis with nothing else on it. It should be free of custom circuit boards and custom structural components like board mounts and camera masts. However, the motor and servo should be mounted.
+- Or, for teams that are ahead of schedule, have a stock assembled car chassis with their own hardware on it. Teams must certify (honor system) that they are not not re-using custom circuit boards or significant structural components from previous years (after all, the goal of the class is for you to build your own car). No extra credit will be given for this option.
+
+As an exception to the no custom circuit boards rules, you may leave the ESG-designed velocity sensors (reflective encoder board plus codewheel on the tires) mounted on the car if you want to continue using them. Other wheel sensors (like rollers) should be removed.

@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{cp3.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 3
+This checkpoint should largely guarantee a functioning motor drive circuit and steering actuation (does not have to be simultaneous).
+
+== Motor Driver Circuit
+Information to be posted here as it becomes available.
+
+== Checkoff Procedure
+For this checkpoint, you may use the benchtop power supply to power your system if you wish. However, all control signals must be generated from your microcontroller running your code. You may use the serial terminal to send manual control signals (like setting the motor duty cycle).
+
+This checkpoint is divided into two equal parts which may be checked off separately (for example, if you need to deploy different code for the motor driver and steering actuation).
+
+Your hardware should not be damaged (i.e. components should not catch fire or smoke) during any of these tests.
+
+C3.1: Demonstrate your motor drive circuit works (in any order, instructor's choice):
+- Full on
+- Full off
+- 30\% duty cycle
+- 5s stall test at 50\% duty cycle
+-- The intent is to ensure proper thermal design on your transistors and ensure your designs are safe under worst-case scenarios
+-- If running off the benchtop power supply, it must be configured so that it doesn't go into current-limiting mode
+-- You must disable any software overcurrent protections or cut-offs (worst-case scenario includes a software fault)
+-- You may retain any hardware overcurrent protections or cut-offs, but permanent fusing is disallowed (I may decide to run this test first)
+- I may ask you explain your transistor circuit, control waveforms, and choice of switching frequency
+
+C3.2: Demonstrate steering control:
+- Turn left
+- Turn right
+- Center steering
+- I may ask you to explain the servo control waveforms

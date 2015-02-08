@@ -47,8 +47,7 @@ Motor drivers\n
 {{<small>}}H-bridge circuit{{</small>}}\n
 {{<small>}}PWM{{</small>}}\n
 \n
-Quiz 1\n
-{{<small>}}Motor model{{</small>}} |
+{{<small>}}[files/load-line.pdf (load line slide)]{{</small>}} |
 Motor control demo\n
 Servo control demo | 
 [cp2.html *C2*: Car inspection]\n
@@ -62,20 +61,23 @@ Power systems\n
 {{<small>}}Boost converter{{</small>}}\n
 {{<small>}}SMPS practicalities{{</small>}}\n
 \n
-Quiz 2\n
-{{<small>}}Motor drivers and MOSFETs{{</small>}} |
+Quiz 1\n
+{{<small>}}Motor model{{</small>}} |
 Mechanical prototyping\n
 SMPS demo |
-*C3*: Benchtop motor & steering |
+[cp3.html *C3*: Benchtop motor & steering] |
  ||
 
 5 \n {{<small>}}16 Feb{{</small>}} | 
 Power Systems\n
 {{<small>}}Linear regulators{{</small>}}\n
-{{<small>}}Comparison{{</small>}} | 
+{{<small>}}Comparison{{</small>}} \n
+\n
+Quiz 2\n
+{{<small>}}Motor drivers and MOSFETs{{</small>}} |
 PCB peer review\n
 PCB fabrication |
-*C4*: Motor from battery |
+[cp4.html *C4*: Motor from battery] |
 Lab: PCB \#1\n
 {{<small>}}draft for peer review{{</small>}}\n
 Fri : PCB \#1\n

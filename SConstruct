@@ -61,13 +61,16 @@ if ARGUMENTS.get('unoconv', 0):
   for x in os.listdir('slides'):
     if os.path.isfile(os.path.join('slides', x)): continue
     if not x.startswith('images'): continue
-    env.ODGImage(Glob(os.path.join('slides', x, '*.odg')))
+    images_dir = os.path.join('slides', x)
+    for x in os.listdir(images_dir):
+      if os.path.splitext(x)[1] == '.odg':
+        env.ODGImage(os.path.join(images_dir, x))
+
+env.Jemdoc(Glob('site/*.jemdoc'))
+env.Copy(Glob('site/jemdoc.css'))
 
 env.PDF(Glob('site/docs/*.tex'))
 env.PDF(Glob('site/slides/*.tex'))
 
 env.Copy(Glob('site/files/*'))
 env.Copy(Glob('site/images/cp1/*'))
-
-env.Jemdoc(Glob('site/*.jemdoc'))
-env.Copy(Glob('site/jemdoc.css'))
