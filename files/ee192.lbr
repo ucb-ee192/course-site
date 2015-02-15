@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -305,6 +305,63 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
 <hole x="0" y="0" drill="3.048"/>
 </package>
+<package name="SO20W">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+wide body 7.5 mm/JEDEC MS-013AC</description>
+<wire x1="-6.895" y1="5.9" x2="6.895" y2="5.9" width="0.1998" layer="39"/>
+<wire x1="6.895" y1="-5.9" x2="-6.895" y2="-5.9" width="0.1998" layer="39"/>
+<wire x1="-6.895" y1="-5.9" x2="-6.895" y2="5.9" width="0.1998" layer="39"/>
+<wire x1="6.46" y1="-3.7" x2="-6.46" y2="-3.7" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="-3.7" x2="-6.46" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="-3.2" x2="-6.46" y2="3.7" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="3.7" x2="6.46" y2="3.7" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="-3.2" x2="-6.46" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="3.7" x2="6.46" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="-3.2" x2="6.46" y2="-3.7" width="0.2032" layer="51"/>
+<wire x1="6.895" y1="5.9" x2="6.895" y2="-5.9" width="0.1998" layer="39"/>
+<smd name="2" x="-4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="3.175" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-3.175" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="1.905" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="4.445" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="5.715" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="-0.635" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="3.175" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="0.635" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-0.635" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="17" x="-1.905" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="18" x="-3.175" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="19" x="-4.445" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="20" x="-5.715" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-5.715" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.715" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-5.9601" y1="-5.32" x2="-5.4699" y2="-3.8001" layer="51"/>
+<rectangle x1="-4.6901" y1="-5.32" x2="-4.1999" y2="-3.8001" layer="51"/>
+<rectangle x1="-3.4201" y1="-5.32" x2="-2.9299" y2="-3.8001" layer="51"/>
+<rectangle x1="-2.1501" y1="-5.32" x2="-1.6599" y2="-3.8001" layer="51"/>
+<rectangle x1="-0.8801" y1="-5.32" x2="-0.3899" y2="-3.8001" layer="51"/>
+<rectangle x1="0.3899" y1="-5.32" x2="0.8801" y2="-3.8001" layer="51"/>
+<rectangle x1="1.6599" y1="-5.32" x2="2.1501" y2="-3.8001" layer="51"/>
+<rectangle x1="2.9299" y1="-5.32" x2="3.4201" y2="-3.8001" layer="51"/>
+<rectangle x1="4.1999" y1="-5.32" x2="4.6901" y2="-3.8001" layer="51"/>
+<rectangle x1="5.4699" y1="-5.32" x2="5.9601" y2="-3.8001" layer="51"/>
+<rectangle x1="5.4699" y1="3.8001" x2="5.9601" y2="5.32" layer="51"/>
+<rectangle x1="4.1999" y1="3.8001" x2="4.6901" y2="5.32" layer="51"/>
+<rectangle x1="2.9299" y1="3.8001" x2="3.4201" y2="5.32" layer="51"/>
+<rectangle x1="1.6599" y1="3.8001" x2="2.1501" y2="5.32" layer="51"/>
+<rectangle x1="0.3899" y1="3.8001" x2="0.8801" y2="5.32" layer="51"/>
+<rectangle x1="-0.8801" y1="3.8001" x2="-0.3899" y2="5.32" layer="51"/>
+<rectangle x1="-2.1501" y1="3.8001" x2="-1.6599" y2="5.32" layer="51"/>
+<rectangle x1="-3.4201" y1="3.8001" x2="-2.9299" y2="5.32" layer="51"/>
+<rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.32" layer="51"/>
+<rectangle x1="-5.9601" y1="3.8001" x2="-5.4699" y2="5.32" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TAMIYA">
@@ -479,6 +536,32 @@ DIP18 Package</description>
 <pin name="OUT1" x="15.24" y="10.16" length="middle" rot="R180"/>
 <pin name="VCC" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="C1+" x="15.24" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MC33883">
+<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="IN_LS1" x="-17.78" y="0" length="middle"/>
+<pin name="IN_HS1" x="-17.78" y="2.54" length="middle"/>
+<pin name="C2" x="-17.78" y="7.62" length="middle"/>
+<pin name="C1" x="-17.78" y="10.16" length="middle"/>
+<pin name="G_EN" x="-17.78" y="15.24" length="middle"/>
+<pin name="VCC2" x="-17.78" y="17.78" length="middle"/>
+<pin name="VCC" x="-17.78" y="20.32" length="middle"/>
+<pin name="IN_HS2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="IN_LS2" x="-17.78" y="-7.62" length="middle"/>
+<pin name="GND_A" x="-17.78" y="-12.7" length="middle"/>
+<pin name="GND1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="GND2" x="-17.78" y="-17.78" length="middle"/>
+<pin name="GATE_LS1" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SRC_HS1" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GATE_HS1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="GATE_HS2" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SRC_HS2" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="GATE_LS2" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="LR_OUT" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="CP_OUT" x="17.78" y="20.32" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -723,6 +806,40 @@ DIP18 Package</description>
 <connect gate="G$1" pin="PR" pad="6"/>
 <connect gate="G$1" pin="V+" pad="8"/>
 <connect gate="G$1" pin="VCC" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC33883">
+<gates>
+<gate name="G$1" symbol="MC33883" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO20W">
+<connects>
+<connect gate="G$1" pin="C1" pad="13"/>
+<connect gate="G$1" pin="C2" pad="2"/>
+<connect gate="G$1" pin="CP_OUT" pad="3"/>
+<connect gate="G$1" pin="GATE_HS1" pad="5"/>
+<connect gate="G$1" pin="GATE_HS2" pad="18"/>
+<connect gate="G$1" pin="GATE_LS1" pad="8"/>
+<connect gate="G$1" pin="GATE_LS2" pad="15"/>
+<connect gate="G$1" pin="GND1" pad="9"/>
+<connect gate="G$1" pin="GND2" pad="14"/>
+<connect gate="G$1" pin="GND_A" pad="12"/>
+<connect gate="G$1" pin="G_EN" pad="20"/>
+<connect gate="G$1" pin="IN_HS1" pad="6"/>
+<connect gate="G$1" pin="IN_HS2" pad="17"/>
+<connect gate="G$1" pin="IN_LS1" pad="7"/>
+<connect gate="G$1" pin="IN_LS2" pad="16"/>
+<connect gate="G$1" pin="LR_OUT" pad="10"/>
+<connect gate="G$1" pin="SRC_HS1" pad="4"/>
+<connect gate="G$1" pin="SRC_HS2" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VCC2" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
