@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{cp5.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 5
+While we're all waiting to get boards back from the fab house, we can continue prototyping hardware that isn't part of the boards and work on the relevant software. This week's checkoff is benchtop velocity control.
+
+The standard way to do this checkoff is to assemble your encoder boards and mount them to the car (if the car didn't come with one), hook them up to the microcontroller, and add a feedback control loop. Simple proportional control is fine, where the motor drive strength is proportional to the difference between the measured speed and the setpoint (the "error"). The proportionality gain is a tuning constant which should be set high enough to be effective but not too high to be unstable (which at the extreme, goes into bang-bang mode oscillating between full-on and full-off).
+
+Since the wheel will be unloaded (there's no car attached to it doing mechanical intertial "filtering"), this simple control scheme is likely to be either instable or inaccurate. That's fine - the main goal of this checkoff is to demonstrate that you can read a sensor and feed it back into an actuator.
+
+== Checkoff Procedure
+Like checkpoint 3, power (for all systems) can come from either the benchtop supply or the battery. However, all signals (especially the motor driver PWM) must be generated from the microcontroller running your code. Your hardware should not be damaged during any of these tests.
+
+- Demonstrate that you have velocity sensing working and the output in terms of some physical units (m\/s, mm\/s, etc). You may use the serial console to print speed data. Under constant speed (say, if you apply a constant PWM to the motor), this output should also be relatively constant.
+- Your velocity sensing must work even if the motor is stalled (i.e. no encoder pulses). I should see a very low or zero velocity in that case.
+- Show you have made an attempt at velocity control. The recommended target setpoint is 3 m\/s, which should provide enough encoder counts for a somewhat stable control loop. It's fine if the applied PWM is noticeably jittering or if the actual velocity is inaccurate. However, if I load / stall the motor (with, say, a finger), the controller should compensate by applying a higher drive strength.
+

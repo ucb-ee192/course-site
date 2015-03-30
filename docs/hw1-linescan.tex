@@ -1,0 +1,68 @@
+% latex 2.09 header
+%\documentstyle[twoside,titlepage,fullpage,fancyheadings]{article}
+
+% latex2e header
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{fullpage}
+%\usepackage{fancyheadings}
+\usepackage{pstricks}
+% \usepackage{psfig}
+%\pagestyle{fancyplain}
+
+
+%\input{lab-fmt.tex}
+% \input epsf.sty
+\setlength{\textheight}{10.0in}
+\begin{document}
+\thispagestyle{empty}
+Professor Fearing ~~~~~~~~~~ EECS192/Assignment \#1 v1.00~~~~~~~~~~ Spring 2015\\
+{\bf Due at beginning of class Tues Mar. 17.} \\
+
+(One assignment per team.) \\
+
+The purpose of this assignment is to allow you to prototype 
+track finding algorithms with a high level language before
+implementing in C on the KL25Z processor. You are free to use
+signal processing libraries, floating point, etc. One goal is
+to find the best performance which can be obtained with unlimited
+processing capability. However, remember that your line finding algorithm
+will need to work in real-time on a 40 MIPS processor. \\
+
+
+Typical strategies to use for finding the track include:
+\begin{enumerate}
+\item
+Frame subtraction and peak detection
+\item 
+smoothing followed by gradient detection (e.g. difference of Gaussians
+approximation to the Laplacian)
+\item
+curve fitting, e.g. cubic spline or $\tanh^{-1}$.
+\end{enumerate}
+\vspace{0.3in}
+
+3 sets of line scan data (for a black stripe on a white background)
+is provided on Piazza for EE192 under ``Resources''.
+(Please note the Freescale rules for the track changed.)
+A partial iPython notebook {\tt linescan-HW1.ipynb} is provided.
+
+Complete the function {\tt find\_track(linescans)} which takes as input
+$n$ frames of linescans of 128 values in the range $0 ... 65535$ and returns:\\
+
+a) {\tt track\_center\_list} which is a length $n$ list of the index in the range $0 ... 127$ corresponding
+to the center of the track in each frame.\\
+
+b) {\tt track\_found\_list} which is a length $n$ list of booleans, {\bf True} if the track is visible for a particular frame.\\
+
+c) {\tt Cross\_found\_list} which is a length $n$ list of booleans, {\bf True} if a crossing is present for a particular frame.\\
+
+Upload your completed iPython notebook to bcourses.
+
+Your python function will be tested against another data set
+taken under similar conditions on a similar track.
+
+Directions for installing iPython can be found on the EE123 web page at:\\
+{\tt http://www-inst.eecs.berkeley.edu/\~{}ee123/sp15/python.html}.
+
+\end{document}

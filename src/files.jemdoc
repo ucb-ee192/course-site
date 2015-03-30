@@ -2,12 +2,14 @@
 = EE192: Mechatronics Design Lab, Spring 2015
 
 == Course Files
-*Under revision for Spring 2015! Check back soon!*
+*Under revision for Spring 2015! Check back frequently!*
 
 === Design notes
 
 *General*
 - [/~ee192/sp11/design/designnotes.htm General design notes]
+- [./docs/debug-checklist.pdf General debugging guidelines]
+- [./files/AnalogDevicesLatchupCMOS.pdf Avoiding Latchup]
 - [/~ee192/sp13/pdf/ee192_oralpresentation2004.pdf Oral presentation from 2004 winners]
 - [/~ee192/sp13/pdf/PostCompetitionThoughts2004.ppt Post-comp thoughts from 2004 winners]
 
@@ -26,7 +28,7 @@
 - [http://store.curiousinventor.com/guides/How_To_Solder/ CuriousInventor's guide to soldering]
 
 *Control*
-- [/~ee192/sp13/pdf/control-overview2.pdf Control overview]
+- [/~ee192/sp15/files/control-overview2.pdf Control overview]
 - [/~ee192/sp13/pdf/steer-control.pdf Bicycle model steering analysis]
 
 === Datasheets
@@ -43,6 +45,7 @@
 - [http://www.irf.com/product-info/datasheets/data/irfb3006pbf.pdf IRFB3006 N-channel power MOSFET]
 - [http://www.fairchildsemi.com/ds/ND/NDP7060.pdf NDP7060 N-channel power MOSFET]
 - [http://pdfserv.maxim-ic.com/arpdf/MAX620-MAX621.pdf MAX620/621 MOSFET driver]
+- [files/MC33883.pdf Freescale H-bridge driver mc33883]
 
 *Motor modeling*
 - [/~ee192/sp13/pdf/motor_modeling.pdf Motor modeling notes]
@@ -51,7 +54,7 @@
 - [/~ee192/sp13/pdf/LT1370.pdf LT1370]
 
 *Linear regulators*
-- [http://www.national.com/ds/LM/LM2940.pdf LM2940]
+- [files/LM2940.pdf LM2940]
 - [http://www.national.com/ds/LM/LM1086.pdf LM1086]
 - [http://www.fairchildsemi.com/ds/KA/KA378R05.pdf KA378R05]
 

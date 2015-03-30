@@ -28,9 +28,8 @@ Do NOT disassemble cars! |
 Project proposal\n
 Motor control & 
 [http://higheredbcs.wiley.com/legacy/college/nise/0470646128/appendices/appendixI.pdf modelling]\n
-Microcontroller recap\n
 {{<small>}}IOs and peripherals{{</small>}}\n
-Electronic construction |
+[docs/motor-worksheet.pdf motor worksheet] |
 Project proposal\n
 Lab equipment\n
 Car critiques\n
@@ -62,23 +61,28 @@ Power systems\n
 {{<small>}}Battery model{{</small>}}\n
 {{<small>}}Boost converter{{</small>}}\n
 {{<small>}}SMPS practicalities{{</small>}}\n
+{{<small>}}[/~ee192/sp15/files/boost-converter.pdf (boost converter notes)]{{</small>}} \n
 \n
 Quiz 1\n
 {{<small>}}Motor model{{</small>}} |
-Mechanical prototyping\n
-SMPS demo |
+SMPS demo \n
+\n
+{{<small>}}[slides/dis4.pdf (slides)]{{</small>}} |
 [cp3.html *C3*: Benchtop motor & steering] |
  ||
 
 5 \n {{<small>}}16 Feb{{</small>}} | 
 Power Systems\n
-{{<small>}}Linear regulators{{</small>}}\n
+{{<small>}}[files/LM2940.pdf Linear regulators]{{</small>}}\n
 {{<small>}}Comparison{{</small>}} \n
 \n
 Quiz 2\n
 {{<small>}}Motor drivers and MOSFETs{{</small>}} |
 PCB peer review\n
-PCB fabrication |
+PCB fabrication\n
+\n
+{{<small>}}[docs/dis5-pcbchecklist.pdf (PCB checklist)]{{</small>}}\n
+{{<small>}}[slides/dis5.pdf (slides)]{{</small>}} |
 [cp4.html *C4*: Motor from battery] |
 Lab: PCB \#1\n
 {{<small>}}draft for peer review{{</small>}}\n
@@ -89,31 +93,32 @@ Fri : PCB \#1\n
 Sensors\n
 {{<small>}}Optical encoder{{</small>}}\n
 {{<small>}}Velocity sensing{{</small>}}\n
+{{<small>}}[/~ee192/sp13/pdf/s6986.pdf Hamamatsu optical detector]{{</small>}} 
 \n
-Quiz 3\n
+Quiz 3:\n
 {{<small>}}SMPS, linear regulators{{</small>}} |
 Optical encoder\n
-Velocity control\n
-Telemetry framework |
-*C5*: Velocity control | 
+Velocity control |
+[cp5.html *C5*: Velocity control] | 
  ||
 
 7 \n {{<small>}}2 Mar{{</small>}} | 
 Line Sense Intro\n
-{{<small>}}Line camera{{</small>}}\n
-{{<small>}}Interfacing{{</small>}} |
+{{<small>}}[/~ee192/sp14/files/TSL1401CL.pdf (line camera datasheet)]{{</small>}}\n
+{{<small>}}[files/AnalogDevicesLatchupCMOS.pdf  (latchup)]{{</small>}}\n
+{{<small>}}[docs/hw1-linescan.pdf (HW1: line detection)]{{</small>}} |
 Line camera demo |
-*C6*: Car assembled\n
+[cp6.html *C6*: Car assembled]\n
 {{<small>}}running from PCBs{{</small>}}\n
 {{<small>}}open-loop drop and run{{</small>}} |
 Fri: Lab cleaned ||
 
 8 \n {{<small>}}9 Mar{{</small>}} | 
 Theoretical models\n
-{{<small>}}PID control{{</small>}}\n
-{{<small>}}Bicycle model{{</small>}} |
+{{<small>}}[/~ee192/sp15/files/control-overview2.pdf PID control]{{</small>}}\n
+{{<small>}}[/~ee192/sp13/pdf/steer-control.pdf Bicycle model]{{</small>}} |
 PID demo | 
-*C7*: Benchtop tracking |
+[cp7.html *C7*: Benchtop tracking] |
  ||
 
 9 \n {{<small>}}16 Mar{{</small>}} |
@@ -121,13 +126,16 @@ Steering\n
 {{<small>}}Model recap{{</small>}}\n
 {{<small>}}Step response{{</small>}}\n
 Tracking control\n
-\n
+{{<small>}}[docs/hw2-steersim.pdf (HW2: steering sim)]{{</small>}} \n
 Quiz 4\n
 {{<small>}}Steering models, PID control{{</small>}}\n |
-Simulation |
-*C8*: Figure-8 test\n
+Simulation\n
+Embedded Programming\n
+\n
+{{<small>}}[slides/dis9-sw.pdf (slides)]{{</small>}} |
+[cp8.html *C8*: Figure-8 test]\n
 {{<small>}}closed-loop drop and run{{</small>}} |
- ||
+Lec: HW1 (line detection) due ||
 
 10 \n {{<small>}}23 Mar{{</small>}} | 
 Spring Break |
@@ -142,14 +150,15 @@ Control practicalities\n
 {{<small>}}Sampling\/discretization{{</small>}}\n
 {{<small>}}Noise and filtering{{</small>}}\n |
 TBD | 
-*C9*: Faster figure-8\n
+[cp9.html *C9*: Faster figure-8]\n
 {{<small>}}and sensor mechanical response{{</small>}} |
 Fri: Lab cleaned ||
 
 12 \n {{<small>}}6 Apr{{</small>}} | 
 Feedforward control |
 TBD |
-*C10*: Practice course |
+[cp10.html *C10*: Practice course] | 
+HW2 (steer sim) due Fri 4/3
  ||
 
 13 \n {{<small>}}13 Apr{{</small>}} |
@@ -163,6 +172,7 @@ Quiz 5\n
 {{<small>}}Steering behavior and error{{</small>}}\n |
 TBD |
 *Race 1*! |
+Tues 4/7: [files/progrpt.pdf Prog. Report]\n
 Sat: Freescale Cup\n
 {{<small>}}(at UC Davis){{</small>}} ||
 

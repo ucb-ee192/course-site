@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{fullpage}
+\usepackage{fancyheadings}
+\usepackage{pstricks}
+%\usepackage{psfig}
+\pagestyle{plain}
+\setlength{\textheight}{9in}
+
+%\input{lab-fmt.tex}
+\input epsf.sty
+\begin{document}
+\thispagestyle{plain}
+Professor Fearing~~~~~~~~~~~~~EECS192 Debugging Checklist ~~v1.01~~~~~~~~~~Spring 2015
+
+
+\section*{\small Debugging Commandments}
+{\em Anything that can go wrong will go wrong. }
+Which means that you need to follow this checklist every time
+you want to debug. (adapted from 
+{\tt www-inst.eecs.berkeley.edu/\~\ cs150/fa98/labs/debug/debug.html })
+
+\begin{enumerate}
+\item
+Collect documentation.\\
+Don't use processor bandwidth remembering design details. Save processor 
+bandwidth for observations and questions.
+Have schematics, board layout, wiring diagrams, data sheets, documented
+code and any needed manuals open and ready use.
+
+\item
+Visually Inspect the Board/Setup\\
+A quick check to verify that chips are still plugged in,
+no wires have broken, or pins bent, is worth a minute,
+before you start, but is unlikely to find most bugs.
+\item
+Check Software Functionality\\
+Is the computer system and network functioning? Are your
+files missing pieces or corrupted? (You do have memory stick backups, right?)
+Verify that the software tools are working as expected.
+Test a known working simulation/example; do the tools still work?
+\item
+Check Hardware Functionality\\
+Are all cables, oscilloscope and logic probes working?
+(You can check the oscilloscope probes by using the Calib output
+on the front of the oscilloscope. You should see a nice square wave).
+Is test equipment set up for desired sweep rate, volts-per-division,
+etc. (Please notify your TA about bad cables so other students
+won't have to find them the hard way).
+Do you really have power supply voltages correct (Verify with scope)?
+Are grounds tied together for battery, CPU, power supply, and test equipment,
+or are you relying on the AC power line to provide a common ground?
+Verify that basic functionality by testing a known good 
+circuit. 
+
+\item
+Check System Essentials\\
+Is the clock running at the expected frequency?
+Do voltage levels seem reasonable (using oscilloscope to measure)?
+
+\item
+Divide and Conquer
+
+Isolate modules and debug each module independently.
+
+\item 
+Scientific Debugging
+
+The four keys to scientific debugging are:
+\begin{enumerate}
+\item 
+Model Expected Behavior. What do you expect to see?
+Simulators tell you what you have, not what you need to see.
+\item
+Measure the real system's behavior using oscilloscope. 
+Where are the differences from your model significant?
+\item
+Hypothesize possible errors.
+\item
+Controllability and Observability. Force module inputs
+to verify hypotheses, and observe outputs. Are outputs consistent
+with your model, or is something not functioning as expected?
+(Various test cases- DC input, AC input, single stepping).
+
+\end{enumerate}
+
+\item
+Understand Component Devices\\
+Are you sure you understood the data sheet correctly on
+that part?
+
+\item
+Know your Software\\
+Is the software working as you expect it to? 
+Is there a mismatch between your expectations and the result?
+Are there hidden settings/state which changed from a previous session?
+Are you using the right commit?
+
+\item
+Know Your Test Equipment\\
+The digital scope will give nonsense if the sweep rate is
+too high or too low. 
+When in doubt about a signal,
+verify that you have proper voltage levels and timing
+using the oscilloscope.
+
+\item
+Take a Break/Get a New Perspective\\
+Debugging is mentally taxing, and we tend to focus in
+narrowly on particular suspect areas. Taking a break opens
+the mind to a wider range of possibilities and can get
+you out of a rut.
+
+\end{enumerate}
+
+\end{document}
+
+
+

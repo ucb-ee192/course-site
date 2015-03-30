@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{cp6.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 6
+Boards are back, and it's time to put them to use! By this checkpoint, all your first revision hardware (electrical and mechanism) should be done, providing a platform to develop the smarts and sensors of your car in the coming weeks. 
+
+The main focus of this checkpoint is to ensure your platform both works and is reliable and stable. To accomplish that, we will conduct the open-loop drop and run test. 
+
+== Checkoff Procedure
+- Obviously, everything, including your microcontroller, must be powered from the battery. You should have your boost converter working at this point.
+- Your car will be dropped from a 1-foot height, simulating a crash. Nothing should break loose, and the car should continue to function.
+- After being dropped, drive in a figure-eight pattern. This may be done open-loop (so we'll look more at your steering commands rather than the actual shape the car drives in). No track will be provided. You only need to complete one figure-eight, and your car can stop afterwards.
+- Sensors are not necessary for any part of the test (i.e. you don't need to detect the drop to start your car). Everything may run off a simple timer or through wireless commands.
+
+- It is highly encouraged for your car to have a e-stop which can be easily actuated on a moving car. Just in case...
+
+- Having velocity control is highly recommended for this checkpoint.

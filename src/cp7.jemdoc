@@ -1,0 +1,12 @@
+# jemdoc: menu{MENU}{cp7.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 7
+This checkpoint is for you to demonstrate that you can interface with and get data off the line scan camera. While it's recommended that you also make progress with mechanically mounting your camera, there will be no drop test.
+
+For this checkpoint, you must also be able to determine the line position from the camera frame, then use that data to command the steering servos. At this stage, you are free to use a controlled vision environment on your benchtop. Future checkpoints will have you running on a set test track.
+
+== Checkoff Procedure
+- Show that you are able to read the line camera data and discriminate the line. Possible ways to do this include printing data to the serial console or using the telemetry framework. Whichever method you choose, you must be able to explain the output format quickly during the checkpoint.
+
+- When the camera is moved to the left or right of the track, show that the steering servo will respond appropriately. You need not have a fast or well tuned loop at this point.

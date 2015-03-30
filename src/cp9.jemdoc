@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{cp9.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 9
+You had a basic version of your project done last week, but it wasn't necessarily done /well/. That gets fixed now - your car should run better, faster, and stronger. And of course, this checkpoint will be just slightly harder.
+
+Note: the figure-8 track specifications are the same as checkpoint 8. The track is approximately 12.8m long per complete loop.
+
+Also, determine and plot both your car's step response and sensor mechanical response:
+- For the step response, you should plot your lateral position error (as seen by your line camera if you wish - in centimeters) with respect to time (in seconds) as your car goes through the 5cm step track. Do two plots: one with your car running at about 1m\/s, and another with your car running at about 3m\/s. Don't forget to set up the crash barrier!
+- For the sensor mechanical response, you can plot either your sensed line position or a waterfall visualization of your raw line camera data with respect to time as your car navigates the figure-8 track. Annotate salient features of the track (crossings and lobes) and note if there are high frequency components from mechanical instability like vibration (as opposed to your steering response).
+
+== Checkoff Procedure
+- Your car must run three consecutive loops of the figure-8 track averaging at least 1m\/s (or at most 38.4s for the three laps). A laser tripwire may be used to time your car (however, you may start your car some distance behind the tripwire to allow for acceleration).
+- Your camera controller and line detection algorithm must be resilient to changes in illumination. For this round, the illumination conditions will be controlled:
+-- The main lab lights (switches 1 and 2, counting from the left) will be on.
+-- The track lights (switches 3 and 4) will start on.
+-- After the first lap, the track light will be dimmed to half (switch 4 turned off).
+-- After the second lap, the track light will be restored to full (switch 4 turned on).
+- Turn in both the step response and sensor mechanical response plots digitally on bCourses.

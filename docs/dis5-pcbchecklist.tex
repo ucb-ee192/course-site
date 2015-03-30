@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\centering \Large \bf EECS192 Mechatronic Design Laboratory \\}
+{\centering \bf Discussion 5, PCB Peer Review Checklist \\}
+{\centering Ducky \\}
+
+Here are some things to look for while doing the PCB Peer Review.
+
+\section{Schematic: Style}
+Clean and readable schematics are necessary to make board reviews easier as well as reduce the chance of hidden bugs from messiness.
+
+\begin{enumerate}
+  \item Does the schematic follow dataflow ordering? Signal data should ``flow'' from left to right. Higher voltages should be vertically higher.
+  \item Are component symbols designed for readability (following dataflow ordering rather than physical correspondance)?
+  \item Is the schematic modular? A good granularity balances being able to see a whole conceptual block at once (for speed) and separation of concerns (avoid information overload).
+  \item Are all tunnels / airwires labeled? Are the label names intuitive? In particular, are nets with directionality unambiguously labeled? (example: SPI SDI / SDO lines depend on the point of view, but MISO and MOSI is unambiguous)
+  \item Is the schematic aesthetically nice? This is highly subjective.
+  \item Are all wires either horizontal or vertical? It's uncommon to see angled wires in schematics.
+  \item Pins that aren't connected should explicitly be marked ``Not Connected'' to avoid ambiguity.
+\end{enumerate}
+
+\section{Schematic: General}
+General functional notes to watch out for in a schematic.
+
+\begin{enumerate}
+  \item Is the circuit safe under all conditions?
+  \item Are all parts within their specified operating parameters?
+  \begin{enumerate}
+    \item Voltage limits: Are parts getting at least their minimum and no more than their maximum rated voltages?
+    \item Current limits: Are current limits obeyed for parts like regulators, diodes, and microcontroller GPIO pins?
+  \end{enumerate}
+  \item Do all power rails have appropriate capacitive filtering?
+  \begin{enumerate}
+    \item It's common practice to have a 0.1uF capacitor next to each pair of power/ground pins on a chip.
+    \item Also note that capacitors tend to de-rate (effectively have a lower capacitance) under DC bias. Rule of thumb for ceramic capacitors says to use a capacitor rated for double the operating voltage.
+  \end{enumerate}
+  \item Is the circuit designed for testability? Are there accessible test points / headers? Are there components to aid debugging, like LED arrays or external IO connectors (for example, for a Bluetooth serial dongle)?
+\end{enumerate}
+
+\section{Component Selection}
+Proper component selection ensures that your circuit works with real-world components instead of just ideal models.
+
+\begin{enumerate}
+  \item Are parts sized properly?
+  \begin{enumerate}
+    \item Resistors: are resistors properly rated for power? (this mainly applies to resistors carrying significant current)
+    \item Capacitors: are capacitors sized for the combination of capacitance and voltage? (larger capacitors / higher voltage rated capacitors may require larger packages - this mainly applies to surface-mount parts)
+  \end{enumerate}
+  \item Are components commonly available?
+  \begin{enumerate}
+    \item The E6, E12, ... preferred numbers series provide common resistor, capacitor, and inductor values.
+    \item E12 series (E6 series in large font) for reference: 10 {\footnotesize 12} 15 {\footnotesize 18} 22 {\footnotesize 27} 33 {\footnotesize 39} 47 {\footnotesize 56} 68 {\footnotesize 82}
+    \item Common values for pull-up/pull-down resistors: 1k, 4.7k, 10k
+  \end{enumerate}
+  \item Are parts solderable by hand?
+  \begin{enumerate}
+    \item For passives, 0402 is a practical limit for hand soldering. 0603 is generally OK with some practice, and 0805 should be a reasonable starting point for beginners.
+    \item Leadless chips, which have their electrical ``pins'' under the chip, are difficult to solder without specialist reflow equipment.
+  \end{enumerate}
+  \item Are parts specified for idiotproofing?
+  \begin{enumerate}
+    \item In particular, it should be impossible to plug in connectors backwards or into the wrong port.
+  \end{enumerate}
+\end{enumerate}
+
+\section{Schematic: EE192-specific}
+\subsection{General}
+\begin{enumerate}
+  \item Do you have the appropriate breakouts from the microcontroller board? We should not see boards connected with breadboard jumpers.
+  \item If you plan on competing in the Freescale Cup: is it legal? Only one Freescale microcontroller is allowed, and it must use a Freescale motor driver IC (discrete MOSFETs with a Freescale gate driver like the MC33883 is OK).
+  \item Linear regulators are also feedback devices and require capacitive filtering on the input and output pins. The LM2940 in particular requires at least a 22uF low-ESR capacitor to maintain stability.
+\end{enumerate}
+
+\subsection{Motor Controller}
+\begin{enumerate}
+  \item Is there shoot-through protection? If using a half/full-bridge, it should be impossible for the software to turn on both the high and low side transistors.
+  \item Is G\_EN being driven with at least a 4.5v signal?
+  \item Do you have provisions to connect both motors? You may drive them independently (differential drive) or together (for simplicity).
+\end{enumerate}
+
+\subsection{DC/DC Boost Converter}
+\begin{enumerate}
+  \item Is the feedback resistive divider specified correctly?
+\end{enumerate}
+
+\section{Layout: General}
+\begin{enumerate}
+  \item Are DRC rules obeyed? Are you not designing for the minimum unless necessary?
+  \begin{enumerate}
+    \item Allowing manufacturing slack reduces the impact of a fabrication error and maximizes yield.
+    \item Minimum trace width/spacing: 5 mil / 5 mil. Minimum drill size: 15 mil. (1 mil = 1/1000in = 25.4um)
+  \end{enumerate}
+  \item Are traces sized properly for the current they will carry? Smaller traces have higher resistance which also causes increased heat generation.
+  \item Is the polarity indicated for polarized components like LEDs, diodes, and capacitors? Is there a directionality indicator on chips?
+  \item Are all components labeled with a refdes? This makes debugging and assembly easier since you can find parts on the schematic.
+  \item Do components have proper patterns? In particular, the tantalum capacitors for the boost converter are surface-mount parts and require the appropriate (NOT through-hole) footprint.
+  \item Are pins labeled for debugging?
+  \item If using a copper pour, are components connected by a ``thermal'' (separated from the plane, except by traces) rather than poured over? Thermals make soldering easier by reducing the heatsinking effect of a large copper plane.
+  \item When specifying holes, are you accounting for manufacturing tolerances and copper plating? In short, the hole on the board may be slightly smaller than specified.
+  \begin{enumerate}
+    \item A common drill/pad size for through-hole components is 36 mil drill hole / 60 mil pad. This is large enough to accept 0.1'' headers.
+  \end{enumerate}
+  \item For screw mountaing and standoffs, are you accounting for the size of the screw head and lock washer? These things are electrically conductive and possibly abrasive, so running traces under there is inadvisable.
+  \item If using a package with a heatsink (like TO-220, which is used for the MOSFETs and linear regulators, or various thermally-enhanced surface-mount packages), is it being properly electrically connected? Do NOT just connect them to ground without understanding what the pin actually does!
+\end{enumerate}
+
+\section{Layout: EE192-specific}
+\subsection{Motor Controller}
+\begin{enumerate}
+  \item If using TO-220 MOSFETs, are they mounted horizontally (flush to the board)? This increases mechanical stability.
+  \item Are the MOSFETs (and other power components in general) properly heatsunk? This may not be as much of an issue with the wimpy Freescale Cup motors as it will be for the more powerful NATCAR motors.
+  \item Are the power connectors large enough?
+\end{enumerate}
+
+\subsection{DC/DC Boost Converter}
+\begin{enumerate}
+  \item Are you following the layout recommendations?
+  \begin{enumerate}
+     \item You should reduce the length of the high speed switching path: switch pin, diode, and output filtering capacitor.
+     \item You should also avoid putting sensitive traces / components on the opposite side of the high speed switching path to avoid interlayer coupling effects. The datasheet recommends a ground plane underneath.
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
+

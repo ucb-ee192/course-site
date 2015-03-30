@@ -362,6 +362,36 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.32" layer="51"/>
 <rectangle x1="-5.9601" y1="3.8001" x2="-5.4699" y2="5.32" layer="51"/>
 </package>
+<package name="DIL20_600MIL">
+<pad name="P$1" x="-11.43" y="-7.62" drill="0.9144" diameter="1.524" shape="square"/>
+<pad name="P$2" x="-8.89" y="-7.62" drill="0.9144" diameter="1.524"/>
+<pad name="P$3" x="-6.35" y="-7.62" drill="0.9144" diameter="1.524" rot="R90"/>
+<pad name="P$4" x="-3.81" y="-7.62" drill="0.9144"/>
+<pad name="P$5" x="-1.27" y="-7.62" drill="0.9144"/>
+<pad name="P$6" x="1.27" y="-7.62" drill="0.9144"/>
+<pad name="P$7" x="3.81" y="-7.62" drill="0.9144"/>
+<pad name="P$8" x="6.35" y="-7.62" drill="0.9144"/>
+<pad name="P$9" x="8.89" y="-7.62" drill="0.9144"/>
+<pad name="P$10" x="11.43" y="-7.62" drill="0.9144"/>
+<pad name="P$11" x="11.43" y="7.62" drill="0.9144"/>
+<pad name="P$12" x="8.89" y="7.62" drill="0.9144"/>
+<pad name="P$13" x="6.35" y="7.62" drill="0.9144"/>
+<pad name="P$14" x="3.81" y="7.62" drill="0.9144"/>
+<pad name="P$15" x="1.27" y="7.62" drill="0.9144"/>
+<pad name="P$16" x="-1.27" y="7.62" drill="0.9144"/>
+<pad name="P$17" x="-3.81" y="7.62" drill="0.9144"/>
+<pad name="P$18" x="-6.35" y="7.62" drill="0.9144"/>
+<pad name="P$19" x="-8.89" y="7.62" drill="0.9144"/>
+<pad name="P$20" x="-11.43" y="7.62" drill="0.9144"/>
+<wire x1="-13.97" y1="10.16" x2="13.97" y2="10.16" width="0.127" layer="21"/>
+<wire x1="13.97" y1="10.16" x2="13.97" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-10.16" x2="-13.97" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-10.16" x2="-13.97" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-1.27" x2="-13.97" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="1.27" x2="-13.97" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="1.27" x2="-13.97" y2="-1.27" width="0.127" layer="21" curve="-180"/>
+<circle x="-11.43" y="-9.525" radius="0" width="0.635" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TAMIYA">
@@ -818,7 +848,7 @@ DIP18 Package</description>
 <gate name="G$1" symbol="MC33883" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO20W">
+<device name="SO20W" package="SO20W">
 <connects>
 <connect gate="G$1" pin="C1" pad="13"/>
 <connect gate="G$1" pin="C2" pad="2"/>
@@ -840,6 +870,33 @@ DIP18 Package</description>
 <connect gate="G$1" pin="SRC_HS2" pad="19"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 <connect gate="G$1" pin="VCC2" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DIL20_600MIL_CARRIER" package="DIL20_600MIL">
+<connects>
+<connect gate="G$1" pin="C1" pad="P$13"/>
+<connect gate="G$1" pin="C2" pad="P$2"/>
+<connect gate="G$1" pin="CP_OUT" pad="P$3"/>
+<connect gate="G$1" pin="GATE_HS1" pad="P$5"/>
+<connect gate="G$1" pin="GATE_HS2" pad="P$18"/>
+<connect gate="G$1" pin="GATE_LS1" pad="P$8"/>
+<connect gate="G$1" pin="GATE_LS2" pad="P$15"/>
+<connect gate="G$1" pin="GND1" pad="P$9"/>
+<connect gate="G$1" pin="GND2" pad="P$14"/>
+<connect gate="G$1" pin="GND_A" pad="P$12"/>
+<connect gate="G$1" pin="G_EN" pad="P$20"/>
+<connect gate="G$1" pin="IN_HS1" pad="P$6"/>
+<connect gate="G$1" pin="IN_HS2" pad="P$17"/>
+<connect gate="G$1" pin="IN_LS1" pad="P$7"/>
+<connect gate="G$1" pin="IN_LS2" pad="P$16"/>
+<connect gate="G$1" pin="LR_OUT" pad="P$10"/>
+<connect gate="G$1" pin="SRC_HS1" pad="P$4"/>
+<connect gate="G$1" pin="SRC_HS2" pad="P$19"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+<connect gate="G$1" pin="VCC2" pad="P$11"/>
 </connects>
 <technologies>
 <technology name=""/>

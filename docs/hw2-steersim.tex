@@ -1,0 +1,90 @@
+% latex 2.09 header
+%\documentstyle[twoside,titlepage,fullpage,fancyheadings]{article}
+
+% latex2e header
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage{fullpage}
+%\usepackage{fancyheadings}
+%\usepackage{pstricks}
+%\usepackage{psfig}
+%\pagestyle{fancyplain}
+
+
+%\input{lab-fmt.tex}
+\input epsf.sty
+\setlength{\textheight}{10.0in}
+\begin{document}
+\thispagestyle{empty}
+Professor Fearing ~~~~~~~~~~ EECS192/Assignment \#2 Car Steering~~~~~~~ Spring 2015\\
+{\bf Due by 5 pm Fri. April 3 in 725 S.D. Hall.} \\
+
+(One assignment per team.) 
+
+For this assignment you will be using  {\tt V-rep} for dynamic simulation
+of a car. (V-rep Pro EDU V3.2 
+is available in 204 Cory, and can be downloaded for Mac/Ubuntu/Windows at \\
+{\tt http://www.coppeliarobotics.com/downloads.html}. 
+The car model {\tt car-scale.ttt} is on Piazza. V-rep is the
+server, and you will write a Python remote API to control the simulator.
+The simulator estimates ${\tt yDist} = y_a$,
+ the lateral error from the track
+at a distance approximately 2 car lengths in front, and takes
+2 inputs: 1)  commanded steering angle ${\tt steerAngle} = \delta$
+and 2) longitudinal velocity ${\tt xSpeed}= V$. 
+See the {\tt readMe.txt} in the Python directory. The V-rep simulation
+server needs to start before {\tt carTest.py}.
+{\tt carTest.py} will run the car but it is not tuned.
+You will modify and extend the code to get a good car controller.
+The simulator runs ok at 10 ms time step (dynamics are updated at 10X).
+
+For all plots, time axes should be in seconds, and 
+lateral errors in m or cm.
+Do not use a white-on-black screen dump (as it looks unprofessional).
+Matplotlib (see iPython notebook from hw1) is suggested to 
+make nice plots.
+
+For each part below, plot on 1 page 
+a) actual x vs y position of car b) lateral error 
+$y_a$ as function of time, c) steering angle $\delta$ as function of time.
+For part 4, below, also plot d) car longitudinal velocity as a function of 
+time.
+For each part, list constants used. 
+($k_p$ should have units of radians/meter, etc.)\\
+
+(25 pts) 1. Steering Simulation- proportional control\\
+(22) a. Using pure position control, $\delta = k_p y_a$, choose a fixed speed
+$V$ and $k_p$ that allows the car to successfully complete the track
+without hitting any cone(s). Report $k_p$ and $V$.\\
+(3) b. Specify worst-case overshoot (cm), and note on plots where this occurs.\\
+
+(25 pts) 2. Steering Simulation- proportional + derivative control\\
+(20) a. Using PD control $\delta = k_p y_a + k_d \dot y_a$, choose
+a fixed speed that allows the car successfully complete the track
+without hitting any cone(s). Report $k_p$, $k_d$, and $V$.
+(Estimate $\dot y_a \approx \frac{y_a[n] - y_a[n-1]}{20 ms}$.)\\
+(3) b. Specify worst-case overshoot (cm), and note on plots where this occurs.\\
+(2) c. Briefly comment on any differences in performance observed
+between P and PD type control, such as overshoot or maximum speed.\\
+
+(30 pts) 3. Sensor Resolution Effect\\
+(10) a. For your line camera mounting location and orientation,
+estimate track position resolution $\Delta$ (in cm) which is limited by the 128
+elements. (Optionally, use your algorithm from HW1).  
+Standard deviation due to position quantization can be estimated as
+$\sigma = \frac{\Delta}{\sqrt{12}}$.\\
+(20) b. Repeat problem 2 above, but adding the noise into 
+estimated $y_a$.\\
+i.e. {\tt  yDist = yDist + np.random.normal(0.0, sigma)}.\\
+
+(20 pts) 4. Steering simulation with PD, quantization, and speed control\\
+(15) a. Modify {\tt carTest.py} to use
+car speed control rather than a fixed speed.
+For example, decelerate when the lateral error is large, and speed
+up when tracking well. (Or choose a velocity setpoint depending
+on error.) Plot best car performance. Specify the velocity
+controller used.\\
+(5) b. What is worst case overshoot? What is laptime? Has the 
+best time improved compared to fixed car speed?\\
+\end{document}
+

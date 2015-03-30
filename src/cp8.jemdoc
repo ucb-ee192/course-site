@@ -1,0 +1,18 @@
+# jemdoc: menu{MENU}{cp8.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 8
+By this checkpoint, you should have a rough version of the entire project done. Your car should be able to follow a track, which will be set up in a figure-8 shape and following NATCAR specifications (single line in the center of the track - note that this is different that the Freescale Cup track). Your control loop should be stable enough to not lose the track or be confused by the self-crossing track.
+
+The figure-8 track specifications are follows:
+- 1 meter radius on each circular lobe
+- 60 degree linear crossing in the center, line segment beginning tangential to the circle
+- White tape on dark carpet
+
+== Checkoff Procedure
+- Your car will be dropped from a 1-foot height, simulating a crash. Nothing should break loose, and the car should continue to function.
+- After being dropped, the car should acquire the figure-8 track and run three consecutive full laps. You may use a wireless command to tell the car to start or stop running, but no other commands may be sent to the car. 
+- There is no speed requirement.
+
+- It is highly encouraged for your car to have a e-stop which can be easily actuated on a moving car. Just in case...
+

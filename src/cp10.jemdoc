@@ -1,0 +1,11 @@
+# jemdoc: menu{MENU}{cp10.html}
+= EE192: Mechatronics Design Lab
+
+== Checkpoint 10
+Show us what your car can do by running the Cory courtyard track!
+
+Additionally, since you should be learning something from every run, generate a plot of your car's response to either the whole track or a selected interesting segment of your choice. As with the last checkpoint, this may either be the lateral position error (as seen by the line camera if you wish - in centimeters) or a waterfall visualization of your raw line camera data with respect to time. Include a quick analysis (no more than a paragraph) of any issues illustrated by the data.
+
+== Checkoff Procedure
+- Run the Cory courtyard track in no more than 5 minutes. As the track is approximately 100 meters long, the average speed necessary to meet this requirement is a ridiculously leisurely 0.33m/s.
+- Turn in both your plots digitally on bCourses.
