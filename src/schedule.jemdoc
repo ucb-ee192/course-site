@@ -147,62 +147,72 @@ preparing for the Freescale cup{{</small>}} |
 
 11 \n {{<small>}}30 Mar{{</small>}} | 
 Control practicalities\n
-{{<small>}}Sampling\/discretization{{</small>}}\n
-{{<small>}}Noise and filtering{{</small>}}\n |
-TBD | 
+{{<small>}}DT control{{</small>}}\n
+{{<small>}}Feedforward{{</small>}}\n |
+None | 
 [cp9.html *C9*: Faster figure-8]\n
 {{<small>}}and sensor mechanical response{{</small>}} |
-Fri: Lab cleaned ||
+Fri 4\/3: Lab cleaned \n
+Fri 4\/3: HW2 (steer sim) due ||
 
 12 \n {{<small>}}6 Apr{{</small>}} | 
-Feedforward control |
-TBD |
+PD Tuning for steering\n
+{{<small>}}[docs/discrete-control.pdf DT control example] {{</small>}} |
+Embedded Programming II \n
+\n
+{{<small>}}[slides/dis11.pdf (slides)]{{</small>}} |
 [cp10.html *C10*: Practice course] | 
-HW2 (steer sim) due Fri 4/3
- ||
+Tue 4\/7: [files/progrpt.pdf Prog. Report] due ||
 
 13 \n {{<small>}}13 Apr{{</small>}} |
 Robustness and uncertainty\n
-{{<small>}}Latchup{{</small>}}\n
-{{<small>}}Mechanical design{{</small>}}\n
+{{<small>}}Digital Filtering{{</small>}}\n
 {{<small>}}Software robustness{{</small>}}\n
 {{<small>}}Supervisor systems{{</small>}}\n
 \n
 Quiz 5\n
 {{<small>}}Steering behavior and error{{</small>}}\n |
-TBD |
-*Race 1*! |
-Tues 4/7: [files/progrpt.pdf Prog. Report]\n
-Sat: Freescale Cup\n
+Mechanical Tuning\n
+\n
+{{<small>}}[slides/dis12.pdf (slides)]{{</small>}} |
+[races.html *Race 1*!] |
+Sat 4\/18: Freescale Cup\n
 {{<small>}}(at UC Davis){{</small>}} ||
 
 14 \n {{<small>}}20 Apr{{</small>}} |
 Mechatronics examples\n
-{{<small>}}Electronic stability control{{</small>}} |
-TBD |
+{{<small>}}Electronic stability control{{</small>}}\n 
+{{<small>}}[http://dynamicsystems.asmedigitalcollection.asme.org/data/Journals/JDSMAA/26249/314_1.pdf (Pilutti et al. ACC 1995.)]{{</small>}}\n
+\n
+{{<small>}}[refSteer.html (more steering references)]{{</small>}} |
+None |
  |
  ||
 
 15 \n {{<small>}}27 Apr{{</small>}} | 
 Mechatronics examples |
-TBD |
-*Race 2*! |
+None |
+[races.html *Race 2*!] |
+[docs/oral-present.pdf Oral reports:]\n Th 930-11 (289 Cory)\n Fri 1130-2 pm (540 AB Cory)
 Fri: Lab cleaned ||
 
 16 \n {{<small>}}4 May{{</small>}} |
-Oral reports |
+optional review \n
+{{<small>}} [../sp12/files/documents/s98sols.pdf Sp98 final]
+[../sp12/files/documents/s99sols.pdf Sp99 soln] \n
+[../sp12/files/documents/s98fin.pdf Sp98 final]{{</small>}} |
 {{<small>}}N/A{{</small>}} |
  |
  ||
 
 17 \n {{<small>}}11 May{{</small>}} | 
-Wed: Final Exam\n
+Wed: Final Exam 180 Tan\n
 {{<small>}}(11:30am-2:30pm){{</small>}} |
 {{<small>}}N/A{{</small>}} |
  |
  ||
 
-{{<small>}}23 Feb{{</small>}} | 
+{{<small>}}23 May{{</small>}} | 
  |
  |
  |

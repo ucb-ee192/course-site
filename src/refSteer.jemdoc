@@ -1,0 +1,75 @@
+# jemdoc: menu{MENU}{finalrace.html}
+= EE192: Mechatronics Design Lab
+
+== References on Vehicle Steering and Stability Control
+
+- [http://soliton.ae.gatech.edu/people/dcsl/research-8.html Vehicle Dynamics and Control During Abnormal Driving (Georgia Tech)]
+
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4433885&tag=1 Velenis, E., Tsiotras, P., and Lu, J., "Aggressive Maneuvers on Loose
+Surfaces: Data Analysis and Input Parameterization,'' 15th IEEE
+Mediterranean Control Conference, June 26-29, Athens, Greece.]
+
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7068670 Velenis, E., Tsiotras, P., and Lu, J., "Modeling Aggressive Maneuvers on
+Loose Surfaces: The Cases of Trail-Braking and Pendulum-Turn,'' European
+Control Conference, Kos, Greece, July 2-5, 2007.]
+
+Some nice turning simulation (Georgia Tech): [http://soliton.ae.gatech.edu/people/dcsl/movies/wrc_compilation.wmv (video 1)] [http://soliton.ae.gatech.edu/people/dcsl/movies/skidding.avi (video 2)]
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4392828 Baffet, G. Charara, A. Dherbomez, G. ``An Observer of Tire Road Forces
+and Friction for Active Security Vehicle Systems'' Mechatronics,
+IEEE/ASME Transactions on Publication Date: Dec. 2007 Volume: 12, Issue:
+6 On page(s): 651-661]
+
+- [http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=789681 Tseng, H.E. Ashrafi, B. Madau, D. Allen Brown, T. Recker, D. ``The
+development of vehicle stability control at Ford'' Mechatronics,
+IEEE/ASME Transactions on Publication Date: Sep 1999 Volume: 4, Issue: 3
+On page(s): 223-234]
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=529792 T. Pilutti, G. Ulsoy, and D. Hrovat, ``Vehicle steering intervention
+through differential braking,'' Proc. American Control Conf. Seattle,
+Wash. June 1995.]
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=924794 Brennan, S. Alleyne, A. ``Using a scale testbed: Controller design and
+evaluation'' Control Systems Magazine, IEEE Publication Date: Jun 2001
+Volume: 21, Issue: 3 On page(s): 15-26]
+
+- [http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=891046 Brennan, S. Alleyne, A. ``The Illinois Roadway Simulator: a mechatronic
+testbed for vehicle dynamics and control,'' Mechatronics, IEEE/ASME
+Transactions on Publication Date: Dec 2000 Volume: 5, Issue: 4 On
+page(s): 349-359]
+
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1306460 Chankyu Lee K. Hedrick Kyongsu Yi , ``Real-time slip-based estimation of
+maximum tire-road friction coefficient,'' Mechatronics, IEEE/ASME
+Transactions on Publication Date: June 2004]
+
+- [http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=789684 Han-Shue Tan; Guldner, J.; Patwardhan, S.; Chieh Chen; and others.
+     Development of an automated steering vehicle based on roadway magnets-a case study of mechatronic system design.
+   IEEE/ASME Transactions on Mechatronics, Sept. 1999, vol.4, (no.3):258-72.]
+ 
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=736743 Guldner, J.; Sienel, W.; Han-Shue Tan; Ackermann, J.; and others.
+     Robust automatic steering control for look-down reference systems with front and rear sensors.
+   IEEE Transactions on Control Systems Technology, Jan. 1999, vol.7, (no.1):2-11.]
+ 
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=610853 Patwardhan, S.; Han-Shue Tan; Guldner, J.
+     A general framework for automatic steering control: system analysis.
+   Proceedings of 16th American CONTROL Conference, Albuquerque,
+   NM, USA, 4-6 June 1997). Evanston, IL, USA: American Autom. Control Council,
+   1997. p. 1598-602 vol.3.]
+ 
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=612086 Patwardhan, S.; Han-Shue Tan; Guldner, J.; Tomizuka, M.
+     Lane following during backward driving for front wheel steered vehicles.
+   Proceedings of 16th American CONTROL Conference, Albuquerque, NM, USA, 4-6 June 1997). Evanston, IL, USA: American Autom. Control Council,
+   1997. p. 3348-53 vol.5.]
+ 
+- [http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=649756 Guldner, J.; Han-Shue Tan; Patwardhan, S.
+     Study of design directions for lateral vehicle control. 
+   Proceedings of the 36th IEEE Conference on Decision and Control, San Diego, CA, USA, 10-12 Dec. 1997). New York, NY,
+   USA: IEEE, 1997. p. 4732-7 vol.5.]
+ 
+- [http://www.tandfonline.com/doi/abs/10.1080/00423119608969311#.VTfKjeGRqgU Guldner, J.; Han-Shue Tan; Patwardhan, S.
+      Analysis of automatic steering control for highway vehicles with look-down lateral reference systems.
+    Vehicle System Dynamics, Oct. 1996, vol.26, (no.4):243-69.]
+ 
+

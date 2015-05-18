@@ -1,0 +1,59 @@
+# jemdoc: menu{MENU}{finalrace.html}
+= EE192: Mechatronics Design Lab
+
+== Final Race
+The races will be carried out using NATCAR rules for timing (best run in 5 minutes, with timeout and second try with max of 2 minutes).
+
+=== Round 1
+Round 1 will be scored out of 10 points as follows:
+~~~
+{}{table}
+6 points | Moves under own power ||
+6.5 points | Makes first turn ||
+7 points | Completes 1\/2 of the track in < 5 minutes ||
+8 points | Completes whole track in < 5 minutes \n
+{{<small>}}about 0.3 m\/s{{</small>}} ||
+9 points | Completes whole track in 2 minutes or less\n
+{{<small>}}about 0.8 m\/s{{</small>}} ||
+>9 points | For cars which are fast and/or well-stabilized
+~~~
+\n
+\n
+The final point, once you score 9 points based on time, will be awarded on a deductions system as follows, floored at zero:
+~~~
+{}{table}
+\-0.3 points | Twitchy steering ||
+\-0.3 points | Goes wide on curves ||
+\-0.3 points | Oscillatory step response ||
+\-0.3 points | Over 60 sec \n
+{{<small>}}about 1.6 m\/s{{</small>}} ||
+\-0.5 points | Hits cone(s)
+~~~
+
+=== Round 2
+Round 2 will be scored out of 20 points as follows:
+~~~
+{}{table}
+12 points | Moves under own power ||
+13 points | Makes first turn ||
+15 points | Completes 1\/2 of the track in < 5 minutes ||
+16 points | Completes whole track in < 5 minutes \n
+{{<small>}}about 0.3 m\/s{{</small>}} ||
+18 points | Completes whole track in 1 minute or less\n
+{{<small>}}about 1.6 m\/s{{</small>}} ||
+>18 points | For cars which are fast and/or well-stabilized
+~~~
+\n
+\n
+The final two points, once you score 18 points based on time, will be awarded on a deductions system as follows, floored at zero:
+~~~
+{}{table}
+\-0.5 points | Twitchy steering ||
+\-0.5 points | Goes wide on curves ||
+\-0.5 points | Oscillatory step response ||
+\-1 point | Over 40 sec \n
+{{<small>}}under about 2.4 m\/s{{</small>}} ||
+\-1 point | Loose hardware \n
+{{<small>}}including car scraping on track{{</small>}} ||
+\-1 point | Hits cone(s)
+~~~
