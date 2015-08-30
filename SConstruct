@@ -1,4 +1,5 @@
 from subprocess import call
+import glob
 import os
 import shutil
 
@@ -51,6 +52,11 @@ env.Append(BUILDERS = {'Jemdoc' : jemdoc_build})
 env.Append(BUILDERS = {'ODGImage' : odg_build})
 env.Append(BUILDERS = {'Copy' : copy_build})
 
+def independent_glob(fn, glob_str, srcdir='', tardir=''):
+  files = glob.glob(srcdir + glob_str)
+  for file in files:
+    fn('site/' + tardir + os.path.relpath(file, srcdir))
+
 if ARGUMENTS.get('unoconv', 0):
   # usage: python build/scons.py unoconv=1
   # Most machines probably don't have OpenOffice Draw, which is that the
@@ -58,19 +64,13 @@ if ARGUMENTS.get('unoconv', 0):
   # images is run only with a special flag.
   # The images should be checked in to the repository.
   # (yes, it's a dirty hack, but it gets stuff working)
-  for x in os.listdir('slides'):
-    if os.path.isfile(os.path.join('slides', x)): continue
-    if not x.startswith('images'): continue
-    images_dir = os.path.join('slides', x)
-    for x in os.listdir(images_dir):
-      if os.path.splitext(x)[1] == '.odg':
-        env.ODGImage(os.path.join(images_dir, x))
+  independent_glob(env.ODGImage, 'slides/images*/*.odg')
 
-env.Jemdoc(Glob('site/*.jemdoc'))
+independent_glob(env.Jemdoc, '*.jemdoc', 'src/', '')
 env.Copy(Glob('site/jemdoc.css'))
 
-env.PDF(Glob('site/docs/*.tex'))
-env.PDF(Glob('site/slides/*.tex'))
+independent_glob(env.PDF, 'docs/*.tex')
+independent_glob(env.PDF, 'slides/*.tex')
 
-env.Copy(Glob('site/files/*'))
-env.Copy(Glob('site/images/cp1/*'))
+independent_glob(env.Copy, 'files/*')
+independent_glob(env.Copy, 'images/**/*')
